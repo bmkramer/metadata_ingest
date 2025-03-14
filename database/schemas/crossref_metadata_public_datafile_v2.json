@@ -32,7 +32,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -44,7 +44,7 @@
   {
     "description": "Other identifiers for the work provided by the depositing member",
     "mode": "REPEATED",
-    "name": "alternative-id",
+    "name": "alternative_id",
     "type": "STRING"
   },
   {
@@ -52,7 +52,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -346,14 +346,14 @@
   {
     "description": "Full titles of the containing work (usually a book or journal)",
     "mode": "REPEATED",
-    "name": "container-title",
+    "name": "container_title",
     "type": "STRING"
   },
   {
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -367,7 +367,7 @@
     "fields": [
       {
         "mode": "NULLABLE",
-        "name": "crossmark-restriction",
+        "name": "crossmark_restriction",
         "type": "BOOLEAN"
       },
       {
@@ -377,7 +377,7 @@
       }
     ],
     "mode": "NULLABLE",
-    "name": "content-domain",
+    "name": "content_domain",
     "type": "RECORD"
   },
   {
@@ -385,7 +385,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -399,7 +399,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       },
@@ -437,7 +437,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       },
@@ -569,7 +569,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           }
@@ -602,7 +602,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           }
@@ -663,7 +663,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       },
@@ -793,7 +793,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -805,7 +805,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -888,7 +888,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -900,7 +900,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -931,7 +931,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER"
           }
         ],
@@ -943,7 +943,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER"
           }
         ],
@@ -955,7 +955,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER"
           }
         ],
@@ -1036,7 +1036,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -1048,7 +1048,7 @@
             "fields": [
               {
                 "mode": "REPEATED",
-                "name": "date-parts",
+                "name": "date_parts",
                 "type": "INTEGER"
               }
             ],
@@ -1241,7 +1241,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -1261,7 +1261,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           }
@@ -1275,7 +1275,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           }
@@ -1319,7 +1319,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           },
@@ -1406,7 +1406,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -1426,7 +1426,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -1440,7 +1440,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -1454,7 +1454,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER",
         "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
       }
@@ -1467,7 +1467,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER"
       }
     ],
@@ -2924,7 +2924,7 @@
         "fields": [
           {
             "mode": "REPEATED",
-            "name": "date-parts",
+            "name": "date_parts",
             "type": "INTEGER",
             "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
           },
@@ -2961,7 +2961,7 @@
     "fields": [
       {
         "mode": "REPEATED",
-        "name": "date-parts",
+        "name": "date_parts",
         "type": "INTEGER"
       }
     ],

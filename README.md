@@ -1,3 +1,11 @@
+# Crossref metadata - Data Ingest
+
+https://cloud.google.com/dataflow/docs/guides/templates/provided/bulk-decompress-cloud-storage
+
+------------------
+
+lines below imported from template
+
 # OpenAIRE Data Ingest
 
 This repository is for ingesting the OpenAIRE data dump into Google Bigquery. It has been reworked to make it easier to understand the task flow and for when future versions of the data dumps are released. 

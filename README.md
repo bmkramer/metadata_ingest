@@ -1,8 +1,8 @@
 # Metadata ingest 
 
-Metadata ingest from various open data sources
+Metadata ingest from various open data sources into Google Big Query
 
-#Workflow
+## Workflow
 
 - download datafile to local
 - extract folder(s) where applicable
@@ -14,7 +14,7 @@ Schemas per data source in folder [\databases]
 
 ------------------
 
-Data sources included:
+## Data sources
 
 - Crossref public data file (2025-03-13)
 - DataCite public data file 2024 

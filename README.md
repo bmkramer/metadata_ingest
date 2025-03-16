@@ -17,4 +17,3 @@ Schemas per data source in folder [/databases]
 - Crossref public data file (2025-03-13)
 - DataCite public data file 2024 
 - OpenAIRE graph data (2025-02-11)
-- test

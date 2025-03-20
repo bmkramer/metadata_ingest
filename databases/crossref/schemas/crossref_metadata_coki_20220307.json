@@ -1,9 +1,4 @@
 [
-{
-  "name": "crossref",
-  "type": "RECORD",
-  "mode": "NULLABLE",
-  "fields": [
   {
     "description": "DOI of the work.",
     "mode": "NULLABLE",
@@ -651,32 +646,6 @@
         "name": "name",
         "type": "STRING",
         "description": "Funding body primary name"
-<<<<<<< HEAD
-      },
-      {
-      "fields": [
-        {
-        "mode": "NULLABLE",
-        "name": "id",
-        "type": "STRING"
-        },
-        {
-        "mode": "NULLABLE",
-        "name": "id_type",
-        "type": "STRING"
-        },
-        {
-        "mode": "NULLABLE",
-        "name": "asserted_by",
-        "type": "STRING"
-        }
-      ],  
-        "mode": "REPEATED",
-        "name": "id",
-        "type": "RECORD",
-        "description": "Funding body id"
-=======
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
       }
     ],
     "mode": "REPEATED",
@@ -709,15 +678,6 @@
         "name": "timestamp",
         "type": "INTEGER",
         "description": "Seconds since UNIX epoch."
-<<<<<<< HEAD
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "version",
-        "type": "STRING",
-        "description": "Version indexed."
-=======
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
       }
     ],
     "mode": "NULLABLE",
@@ -2611,7 +2571,6 @@
         "type": "RECORD"
       },
       {
-<<<<<<< HEAD
         "fields": [
           {
             "mode": "NULLABLE",
@@ -2634,8 +2593,6 @@
         "type": "RECORD"
       },
       {
-=======
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
         "fields": [
           {
             "mode": "NULLABLE",
@@ -2643,7 +2600,6 @@
             "type": "STRING"
           },
           {
-<<<<<<< HEAD
             "mode": "NULLABLE",
             "name": "id",
             "type": "STRING"
@@ -2664,81 +2620,6 @@
         "type": "RECORD",
         "fields": [
           {
-=======
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-            "mode": "NULLABLE",
-            "name": "id",
-            "type": "STRING"
-          },
-          {
-            "mode": "NULLABLE",
-            "name": "id_type",
-            "type": "STRING"
-<<<<<<< HEAD
-          },
-          {
-            "mode": "NULLABLE",
-            "name": "asserted_by",
-            "type": "STRING"
-          }
-        ]
-      },
-      {
-        "mode": "REPEATED",
-        "name": "has_expression",
-        "type": "RECORD",
-        "fields": [
-          {
-            "mode": "NULLABLE",
-            "name": "id",
-=======
-          }
-        ],
-        "mode": "REPEATED",
-        "name": "replaces",
-        "type": "RECORD"
-      },
-      {
-        "fields": [
-          {
-            "mode": "NULLABLE",
-            "name": "asserted_by",
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-            "type": "STRING"
-          },
-          {
-            "mode": "NULLABLE",
-<<<<<<< HEAD
-            "name": "id_type",
-=======
-            "name": "id",
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-            "type": "STRING"
-          },
-          {
-            "mode": "NULLABLE",
-<<<<<<< HEAD
-            "name": "asserted_by",
-=======
-            "name": "id_type",
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-            "type": "STRING"
-          }
-        ],
-        "mode": "REPEATED",
-        "name": "requires",
-        "type": "RECORD"
-      },
-      {
-        "mode": "REPEATED",
-<<<<<<< HEAD
-        "name": "finances",
-=======
-        "name": "is_financed_by",
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-        "type": "RECORD",
-        "fields": [
-          {
             "mode": "NULLABLE",
             "name": "id",
             "type": "STRING"
@@ -2754,111 +2635,6 @@
             "type": "STRING"
           }
         ]
-<<<<<<< HEAD
-      }
-    ],
-    "mode": "NULLABLE",
-    "name": "relation",
-    "type": "RECORD"
-  },
-  {
-    "description": "",
-    "fields": [
-      {
-        "fields": [
-          {
-            "mode": "NULLABLE",
-            "name": "URL",
-            "type": "STRING"
-          }
-        ],
-        "mode": "NULLABLE",
-        "name": "primary",
-        "type": "RECORD"
-      },
-      {
-        "fields": [
-          {
-            "mode": "NULLABLE",
-            "name": "URL",
-            "type": "STRING"
-          }
-        ],
-        "mode": "REPEATED",
-        "name": "secondary",
-        "type": "RECORD"
-      }
-    ],
-    "mode": "NULLABLE",
-    "name": "resource",
-    "type": "RECORD"
-  },
-  {
-    "fields": [
-      {
-        "mode": "NULLABLE",
-        "name": "competing_interest_statement",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "language",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "recommendation",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "revision",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "revision_round",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "running_number",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "stage",
-        "type": "STRING"
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "type",
-        "type": "STRING"
-      }
-    ],
-    "mode": "NULLABLE",
-    "name": "review",
-    "type": "RECORD"
-  },
-  {
-    "mode": "NULLABLE",
-    "name": "score",
-    "type": "FLOAT"
-  },
-  {
-    "description": "Abbreviated titles of the containing work.",
-    "mode": "REPEATED",
-    "name": "short_container_title",
-    "type": "STRING"
-  },
-  {
-    "description": "Short or abbreviated work titles",
-    "mode": "REPEATED",
-    "name": "short_title",
-    "type": "STRING"
-  },
-  {
-=======
       },
       {
         "mode": "REPEATED",
@@ -3006,7 +2782,6 @@
     "type": "STRING"
   },
   {
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
     "description": "Currently always Crossref.",
     "mode": "NULLABLE",
     "name": "source",
@@ -3120,17 +2895,6 @@
     "type": "STRING"
   },
   {
-<<<<<<< HEAD
-    "description": "Additional variable in Crossref public data file.",
-    "mode": "NULLABLE",
-    "name": "special_numbering",
-    "type": "STRING"
-  },
-  {
-    "description": "Link to an update policy covering Crossmark updates for this work.",
-    "mode": "NULLABLE",
-    "name": "update_policy",
-=======
     "description": "Link to an update policy covering Crossmark updates for this work.",
     "mode": "NULLABLE",
     "name": "update_policy",
@@ -3191,71 +2955,6 @@
     "description": "Volume number of an article's journal.",
     "mode": "NULLABLE",
     "name": "volume",
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
-    "type": "STRING"
-  },
-  {
-    "fields": [
-      {
-<<<<<<< HEAD
-        "mode": "NULLABLE",
-        "name": "DOI",
-        "type": "STRING",
-        "description": "DOI of the updated work."
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "label",
-        "type": "STRING",
-        "description": "A display-friendly label for the update type."
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "type",
-        "type": "STRING",
-        "description": "The type of update, for example retraction or correction."
-      },
-      {
-        "mode": "NULLABLE",
-        "name": "source",
-        "type": "STRING",
-        "description": "added field in Crossref pubic datafile"
-      },
-      {
-        "fields": [
-          {
-            "mode": "REPEATED",
-            "name": "date_parts",
-            "type": "INTEGER",
-            "description": "Contains an ordered array of year, month, day of month. Only year is required. Note that the field contains a nested array, e.g. [ [ 2006, 5, 19 ] ] to conform to citeproc JSON dates"
-          },
-          {
-            "mode": "NULLABLE",
-            "name": "date_time",
-            "type": "TIMESTAMP",
-            "description": "ISO 8601 date time."
-          },
-          {
-            "mode": "NULLABLE",
-            "name": "timestamp",
-            "type": "INTEGER",
-            "description": "Seconds since UNIX epoch."
-          }
-        ],
-        "mode": "NULLABLE",
-        "name": "updated",
-        "type": "RECORD",
-        "description": "Date on which the update was published."
-      }
-    ],
-    "mode": "REPEATED",
-    "name": "update_to",
-    "type": "RECORD"
-  },
-  {
-    "description": "Volume number of an article's journal.",
-    "mode": "NULLABLE",
-    "name": "volume",
     "type": "STRING"
   },
   {
@@ -3271,23 +2970,8 @@
     "type": "RECORD"
   },
   {
-=======
-        "mode": "REPEATED",
-        "name": "date_parts",
-        "type": "INTEGER"
-      }
-    ],
-    "mode": "NULLABLE",
-    "name": "award_start",
-    "type": "RECORD"
-  },
-  {
->>>>>>> b2c0096c299a42b80bbe83d6b1c0a32cbb26196d
     "mode": "REPEATED",
     "name": "award",
     "type": "STRING"
   }
- ]
- }
 ]
-

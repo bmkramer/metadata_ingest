@@ -2470,6 +2470,28 @@
           }
         ],
         "mode": "REPEATED",
+        "name": "is_required_by",
+        "type": "RECORD"
+      },   
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "asserted_by",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id_type",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
         "name": "is_review_of",
         "type": "RECORD"
       },

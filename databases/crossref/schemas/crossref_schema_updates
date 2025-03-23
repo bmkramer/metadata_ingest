@@ -8,3 +8,9 @@ crossref.translator.affiliation.place (array) NB .name is not an array!
 1000_1999
 crossref.relation.is_expression_of (with fields like all other relations)
 crossref.translator.affiliation.id (nested array, similar fields to other id variables)
+
+2000_2999
+none
+
+3000_3999
+relation.is_required_by (with fields like all other relations)

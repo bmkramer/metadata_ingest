@@ -2209,6 +2209,28 @@
         "name": "is_documented_by",
         "type": "RECORD"
       },
+            {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "asserted_by",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "id_type",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "is_expression_of",
+        "type": "RECORD"
+      },
       {
         "fields": [
           {
@@ -2909,6 +2931,28 @@
             "mode": "NULLABLE",
             "name": "name",
             "type": "STRING"
+          },
+          {
+            "fields" : [
+              {
+                "mode": "NULLABLE",
+                "name": "id",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "id_type",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "asserted_by",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "id",
+            "type": "RECORD"
           },
           {
             "mode": "REPEATED",

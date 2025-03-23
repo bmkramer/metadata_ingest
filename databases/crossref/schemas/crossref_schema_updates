@@ -1,6 +1,10 @@
-200-499
+200_499
 crossref.chair.affiliation.acronym (array)
 crossref.chair.affiliation.place (array)
 
-500-999
-crossref.translator.affiliation.place (array) NB .name is not an array
+500_999
+crossref.translator.affiliation.place (array) NB .name is not an array!
+
+1000_1999
+crossref.relation.is_expression_of (with fields like all other relations)
+crossref.translator.affiliation.id (nested array, similar fields to other id variables)

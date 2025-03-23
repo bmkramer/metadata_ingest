@@ -5,6 +5,8 @@ crossref.chair.affiliation.place (array)
 500_999
 crossref.translator.affiliation.place (array) NB .name is not an array!
 
+NB redid 0_999 after 9000_9999
+
 1000_1999
 crossref.relation.is_expression_of (with fields like all other relations)
 crossref.translator.affiliation.id (nested array, similar fields to other id variables)
@@ -14,3 +16,21 @@ none
 
 3000_3999
 relation.is_required_by (with fields like all other relations)
+
+4000_4999
+5000_5999
+6000_6999
+7000_7999
+8000_8999
+none
+
+
+
+9000_9999
+{"date-parts": [[20201, 4, 26]], "date-time": "20201-04-26T00:00:00Z", "timestamp": 575324726400000}
+-> timestamp out of bounds.
+replaced with
+{"date-parts": [[20201, 4, 26]], "date-time": "20201-04-26T00:00:00Z"}
+[schema not altered]
+
+redid 0_999 at this point

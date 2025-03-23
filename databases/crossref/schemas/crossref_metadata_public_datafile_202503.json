@@ -2908,8 +2908,12 @@
           {
             "mode": "NULLABLE",
             "name": "name",
-            "type": "STRING",
-            "description": ""
+            "type": "STRING"
+          },
+          {
+            "mode": "REPEATED",
+            "name": "place",
+            "type": "STRING"
           }
         ],
         "mode": "REPEATED",

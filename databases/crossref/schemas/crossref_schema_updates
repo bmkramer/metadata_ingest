@@ -36,7 +36,7 @@ in general to find occurrence:
  WHERE REGEXP_CONTAINS(col1, r'("date-time": ")(\d{4})') 
 
 
-0_999 redid at this point
+0_999 redone at this point
 
 10000_10999
 11000_11999
@@ -77,8 +77,14 @@ none
 27000-27999
 28000-28999
 29000-29999
+none
 
 30000-30999
 31000-31999
 32000-32999
 33000-33999
+none
+
+REDONE with latest schema
+1000_1999
+2000_2999

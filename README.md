@@ -23,6 +23,6 @@ For each data source, JSON schemas and SQL scripts used for ingest and transform
 
 - Crossref public data file
   - source and documentation: [https://www.crossref.org/learning/public-data-file/](https://www.crossref.org/learning/public-data-file/)
-  - release date: 2025-03-13
+  - release date: 2025-03-12
   - 
 

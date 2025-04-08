@@ -25,10 +25,9 @@ For each data source, JSON schemas and SQL scripts used for ingest and transform
   - source and documentation: [https://www.crossref.org/learning/public-data-file/](https://www.crossref.org/learning/public-data-file/)
   - release date: 2025-03-12
   - JSON schema modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
-  - The dataset in Google Big Query contains 4 tables:
-    - 1
-    - 1
-    - 1
-    - 2
-    - 
+  - The dataset in Google Big Query curently contains 4 tables:
+    - [crossref_public_data_file_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_20250312)
+    - [crossref_public_data_file_sample_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_sample_20250312)
+    - [rossref_public_data_file_string_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_string_20250312)
+    - [crossref_public_data_file_sample_string_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_string_sample_20250312)
 

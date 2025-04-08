@@ -22,6 +22,8 @@ _(NB These steps are resource intensive, and in future probably better done loca
 
 For each data source, JSON schemas and SQL scripts used for ingest and transformation are available in the folder [databases](/databases).
 
+Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future. 
+
 ## Data sources
 
 - Crossref public data file
@@ -30,5 +32,6 @@ For each data source, JSON schemas and SQL scripts used for ingest and transform
   - [JSON schema](/databases/crossref/schemas/crossref_metadata_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - The [dataset](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref_metadata) in Google Big Query curently contains 4 tables:
     - [crossref_public_data_file_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_20250312) - full public data file (167,008,748 records)
-    - [crossref_public_data_file_sample_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_sample_20250312) - data file sample (10,000 records) 
+    - [crossref_public_data_file_sample_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_sample_20250312) - data file sample (10,000 records)
+  - Currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
   

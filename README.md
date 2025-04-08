@@ -24,6 +24,6 @@ For each data source, JSON schemas and SQL scripts used for ingest and transform
 - Crossref public data file
   - source and documentation: [https://www.crossref.org/learning/public-data-file/](https://www.crossref.org/learning/public-data-file/)
   - release date: 2025-03-12
-  - schema modified from [source](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
+  - schema modified from [Curtin Open Knowledge Institute (COKI) Academic Observatory workflow](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - 
 

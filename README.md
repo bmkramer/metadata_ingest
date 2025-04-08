@@ -14,7 +14,7 @@ _(this still needs to be wrapped in e.g. a Python script)_
 - (optional: extract all files using a [Dataflow template](https://cloud.google.com/dataflow/docs/guides/templates/provided/bulk-decompress-cloud-storage))
 - create a table in the GBQ web UI from the json files in GCS, providing the schema as json
 
-This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression and re-imported from there.  
+This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
 _(NB These steps are resource intensive, and in future probably better done locally)_    
 
 JSON schemas and SQL scripts used for ingest and transformation are available in folder [/databases]

@@ -5,6 +5,30 @@
     "mode": "REPEATED"
   },
   {
+    "name": "breakdowns",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "dois-by-issued-year",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "count",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "year",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "counts",
     "type": "RECORD",
     "mode": "NULLABLE",

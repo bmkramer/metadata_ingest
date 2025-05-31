@@ -5,12 +5,6 @@
     "mode": "REPEATED"
   },
   {
-    "name": "breakdowns",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": []
-  },
-  {
     "name": "counts",
     "type": "RECORD",
     "mode": "NULLABLE",

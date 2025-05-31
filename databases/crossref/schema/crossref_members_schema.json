@@ -1,0 +1,6272 @@
+[
+  {
+    "name": "breakdowns",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "dois-by-issued-year",
+        "type": "RECORD",
+        "mode": "REPEATED",
+        "fields": [
+          {
+            "name": "count",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "year",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "counts",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "backfile-dois",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "current-dois",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "total-dois",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "counts-type",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "all",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-chapter",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-part",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-section",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-series",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-set",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-track",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "database",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "dataset",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "dissertation",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "edited-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "grant",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-issue",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-volume",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "monograph",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "other",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "peer-review",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "posted-content",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings-series",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-entry",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report-component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report-series",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "standard",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "backfile",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-chapter",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-part",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-section",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-track",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "database",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "dataset",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "edited-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "grant",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-issue",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "monograph",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "other",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "peer-review",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "posted-content",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-entry",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report-component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report-series",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "standard",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "current",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-chapter",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-part",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "book-section",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "database",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "dataset",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "edited-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "grant",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "journal-issue",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "monograph",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "other",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "peer-review",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "posted-content",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "proceedings-article",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-book",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "reference-entry",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "report-component",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "standard",
+            "type": "INTEGER",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "coverage",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "abstracts-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "abstracts-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "affiliations-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "affiliations-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "award-numbers-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "award-numbers-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "descriptions-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "descriptions-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "funders-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "funders-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "licenses-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "licenses-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "orcids-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "orcids-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "references-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "references-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "resource-links-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "resource-links-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "ror-ids-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "ror-ids-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "similarity-checking-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "similarity-checking-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "update-policies-backfile",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "update-policies-current",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "coverage-type",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "all",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-chapter",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-part",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-section",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-series",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-set",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-track",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "database",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "dataset",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "dissertation",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "edited-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "grant",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-issue",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-volume",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "monograph",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "other",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "peer-review",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "posted-content",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings-series",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-entry",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report-component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report-series",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "standard",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "backfile",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-chapter",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-part",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-section",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-track",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "database",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "dataset",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "edited-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "grant",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-issue",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "monograph",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "other",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "peer-review",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "posted-content",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-entry",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report-component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report-series",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "standard",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "current",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-chapter",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-part",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "book-section",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "database",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "dataset",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "edited-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "grant",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "journal-issue",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "monograph",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "other",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "peer-review",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "posted-content",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "proceedings-article",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-book",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "reference-entry",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "report-component",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          },
+          {
+            "name": "standard",
+            "type": "RECORD",
+            "mode": "NULLABLE",
+            "fields": [
+              {
+                "name": "abstracts",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "affiliations",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "award-numbers",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "descriptions",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "funders",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "last-status-check-time",
+                "type": "INTEGER",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "licenses",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "orcids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "references",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "resource-links",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "ror-ids",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "similarity-checking",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              },
+              {
+                "name": "update-policies",
+                "type": "FLOAT",
+                "mode": "NULLABLE"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "flags",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "deposits",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-abstracts-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-abstracts-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-affiliations-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-affiliations-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-articles",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-award-numbers-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-award-numbers-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-descriptions-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-descriptions-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-funders-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-funders-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-licenses-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-licenses-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-orcids-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-orcids-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-references-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-references-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-resource-links-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-resource-links-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-ror-ids-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-ror-ids-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-similarity-checking-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-similarity-checking-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-update-policies-backfile",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "deposits-update-policies-current",
+        "type": "BOOLEAN",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "last-status-check-time",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "location",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "names",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "prefix",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "name",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "value",
+        "type": "FLOAT",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "prefixes",
+    "type": "FLOAT",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "primary-name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "tokens",
+    "type": "STRING",
+    "mode": "REPEATED"
+  }
+]

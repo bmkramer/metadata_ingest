@@ -568,5 +568,10 @@
     "name": "title",
     "type": "STRING",
     "mode": "NULLABLE"
+  },
+  {
+    "name": "subjects",
+    "type": "STRING",
+    "mode": "REPEATED"
   }
 ]

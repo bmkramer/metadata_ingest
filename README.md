@@ -32,7 +32,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - [JSON schema](/databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - [SQL processing scripts](/databases/crossref/sql/)
   - notes:
-    - the dataset in Google Big Query curently contains 2 tables:
+    - the dataset in Google Big Query currently contains 2 tables:
       - *crossref_public_data_file_20250312* - full public data file (167,008,748 records)
       - *crossref_public_data_file_sample_20250312* - data file sample (10,000 records)
     - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
@@ -57,6 +57,9 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - [JSON schemas](/databases/openaire/schema/)
   - [SQL processing scripts](/databases/openaire/sql/)
   - notes:
-  - 
+    - the dataset in Google Big Query contains the separate tables for publications, datasets, software, other research products, data sources, organizations, projects and communities, together with relation tables indicating the relation between these different entities
+      - *crossref_public_data_file_20250312* - full public data file (167,008,748 records)
+      - *crossref_public_data_file_sample_20250312* - data file sample (10,000 records)
+    - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
 
 - **PKP**

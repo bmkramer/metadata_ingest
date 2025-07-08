@@ -35,9 +35,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [SQL processing scripts](/databases/crossref/sql/)
   - notes:
     - the dataset in Google Big Query currently contains 2 tables:
-      - *crossref_public_data_file_20250312* - full public data file (167,008,748 records)
-      - *crossref_public_data_file_sample_20250312* - data file sample (10,000 records)
-    - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
+      - full public data file (167,008,748 records)
+      - data file sample (10,000 records)
  
 - **Crossref members** (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
@@ -68,4 +67,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - relations (tables indicating the relation between the different entities)
     - the relation tables are provided as subsets of the full relation table, split by type of entity and (for product-product relations) type of relationship. This was done to save on downstream computing costs.
 
+- **OpenCitations Meta** [to be updated to latest version]
+  - source and documentation: https://doi.org/10.5281/zenodo.14851262
+  - release date: 2025-02-11
+  - [JSON schemas](/databases/opencitations/schema/)
+  - [SQL processing scripts](/databases/opencitations/sql/)
+
 - **PKP**
+  - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
+  - release date: 2024-12-02
+  - [JSON schema](/databases/pkp/schema/)
+  - [SQL processing scripts](/databases/pkp/sql/)

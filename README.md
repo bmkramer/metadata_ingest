@@ -44,7 +44,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
   - source and documentation: [https://api.crossref.org/swagger-ui/index.html#/Journals]
   - sample date: 2025-05-31
-  - [JSON schema](/databases/crossref/schema/crossref_metadata_public_datafile_202503.json)
+  - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
 - 
   

@@ -54,8 +54,8 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.14851262
   - release date: 2025-02-11
-  - [JSON schemas]()
-  - [SQL processing scripts]
+  - [JSON schemas](/databases/openaire/schema/)
+  - [SQL processing scripts](/databases/openaire/sql/)
   - notes:
   - 
 

@@ -1,0 +1,58 @@
+[
+{
+"name": "id",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "title",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "author",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "issue",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "volume",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+
+"name": "venue",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "page",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "pub_date",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "type",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "publisher",
+"type": "STRING", 
+"mode": "NULLABLE"
+},
+{
+"name": "editor",
+"type": "STRING",
+"mode": "NULLABLE"
+}
+]

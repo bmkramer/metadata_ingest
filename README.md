@@ -47,10 +47,16 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - sample date: 2025-05-31
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
-- **Datacite public data file**  [IN PROGRESS]
+- **DataCite public data file**  [IN PROGRESS]
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2024
   - release date: 2025-01-06
 
 - **OpenAIRE**
+  - source and documentation: https://doi.org/10.5281/zenodo.14851262
+  - release date: 2025-02-11
+  - [JSON schemas]()
+  - [SQL processing scripts]
+  - notes:
+  - 
 
 - **PKP**

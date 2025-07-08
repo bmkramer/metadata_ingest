@@ -27,7 +27,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
 ## Data sources
 
 - **Crossref public data file**
-  - source and documentation: [https://www.crossref.org/learning/public-data-file/](https://www.crossref.org/learning/public-data-file/)
+  - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12
   - [JSON schema](/databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - [SQL processing scripts](/databases/crossref/sql/)
@@ -43,7 +43,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
-  - source and documentation: [https://api.crossref.org/swagger-ui/index.html#/Journals]
+  - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2025-05-31
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 

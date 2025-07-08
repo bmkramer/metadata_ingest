@@ -56,7 +56,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - source and documentation: https://doi.org/10.5281/zenodo.14851262
   - release date: 2025-02-11
   - [JSON schemas](/databases/openaire/schema/)
-  - [SQL processing script](/databases/openaire/sql/)
+  - [SQL processing scripts](/databases/openaire/sql/)
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)
@@ -73,7 +73,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
   - [JSON schema](/databases/opencitations/schema/)
-  - [SQL processing script](/databases/opencitations/sql/)
+  - SQL processing scripts [none]
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 
@@ -81,4 +81,3 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2024-12-02
   - [JSON schema](/databases/pkp/schema/)
-  - [SQL processing scripts](/databases/pkp/sql/)

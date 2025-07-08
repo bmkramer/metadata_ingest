@@ -56,7 +56,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - source and documentation: https://doi.org/10.5281/zenodo.14851262
   - release date: 2025-02-11
   - [JSON schemas](/databases/openaire/schema/)
-  - [SQL processing scripts](/databases/openaire/sql/)
+  - [SQL processing script](/databases/openaire/sql/)
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)
@@ -68,10 +68,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - the relation tables are provided as subsets of the full relation table, split by type of entity and (for product-product relations) type of relationship. This was done to save on downstream computing costs.
 
 - **OpenCitations Meta** [to be updated to latest version]
-  - source and documentation: https://download.opencitations.net/#meta (documentation) / https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
+  - source and documentation:
+      - https://download.opencitations.net/#meta (documentation)
+      - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
-  - [JSON schemas](/databases/opencitations/schema/)
-  - [SQL processing scripts](/databases/opencitations/sql/)
+  - [JSON schema](/databases/opencitations/schema/)
+  - [SQL processing script](/databases/opencitations/sql/)
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 

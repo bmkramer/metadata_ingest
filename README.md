@@ -20,9 +20,11 @@ For large datasets, this workflow is carried out in batches.
 This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
 _(NB These steps are resource intensive, and in future probably better done locally)_    
 
-For each data source, JSON schemas and SQL scripts used for ingest and transformation are available in the folder [databases](/databases).
+For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](/databases).
 
 Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future. 
+
+Tables are currently not partitioned or clustered - this would be a useful future approach to save on computing costs
 
 ## Data sources
 
@@ -57,9 +59,13 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - [JSON schemas](/databases/openaire/schema/)
   - [SQL processing scripts](/databases/openaire/sql/)
   - notes:
-    - the dataset in Google Big Query contains the separate tables for publications, datasets, software, other research products, data sources, organizations, projects and communities, together with relation tables indicating the relation between these different entities
-      - *crossref_public_data_file_20250312* - full public data file (167,008,748 records)
-      - *crossref_public_data_file_sample_20250312* - data file sample (10,000 records)
-    - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
+    - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
+      - products (publications, datasets, software, other research products)
+      - datasources
+      - organizations
+      - projects
+      - communities
+      - relations (tables indicating the relation between the different entities)
+    - the relation tables are provided as subsets of the full relation table, split by type of entity and (for product-product relations) type of relationship. This was done to save on downstream computing costs.
 
 - **PKP**

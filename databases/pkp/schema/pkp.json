@@ -1,0 +1,122 @@
+[
+{
+"name": "oai_url",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "application",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "version",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "earliest_datestamp",
+"type": "TIMESTAMP",
+"mode": "NULLABLE"
+},
+{
+"name": "repository_name",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "set_spec",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "stats_id",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "total_record_count",
+"type": "INTEGER",
+"mode": "NULLABLE"
+},
+{
+"name": "issn",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "country_marc",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "country_issn",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "country_tld",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "country_ip",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "country_consolidated",
+"type": "STRING",
+"mode": "NULLABLE"
+},
+{
+"name": "last_completed_update",
+"type": "TIMESTAMP",
+"mode": "NULLABLE"
+},
+{
+"name": "first_beacon",
+"type": "TIMESTAMP",
+"mode": "NULLABLE"
+},
+{
+"name": "last_beacon",
+"type": "TIMESTAMP",
+"mode": "NULLABLE"
+},
+{
+"name": "last_oai_response",
+"type": "TIMESTAMP",
+"mode": "NULLABLE"
+},
+{
+"name": "unresponsive_endpoint",
+"type": "BOOLEAN",
+"mode": "NULLABLE"
+},
+{
+"name": "unresponsive_context",
+"type": "BOOLEAN",
+"mode": "NULLABLE"
+},
+{
+"name": "record_count_2020",
+"type": "INTEGER",
+"mode": "NULLABLE"
+},
+{
+"name": "record_count_2021",
+"type": "INTEGER",
+"mode": "NULLABLE"
+},
+{
+"name": "record_count_2022",
+"type": "INTEGER",
+"mode": "NULLABLE"
+},
+{
+"name": "record_count_2023",
+"type": "INTEGER",
+"mode": "NULLABLE"
+}
+]

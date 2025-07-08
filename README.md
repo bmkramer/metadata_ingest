@@ -38,7 +38,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
     - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
  
 - **Crossref members** (data underlying the Crossref API members endpoint) 
-  - source and documentation: [https://api.crossref.org/swagger-ui/index.html#/Members]
+  - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
   - sample date: 2025-05-31
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 

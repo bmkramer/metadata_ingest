@@ -12,7 +12,7 @@ _(this still needs to be wrapped in e.g. a Python script)_
 - extract folder(s) where applicable
 - upload folder(s) with compressed json files (json.gz or jsonl.gz) to a Google Cloud Storage (GCS) bucket
 - (optional: extract all files using a [Dataflow template](https://cloud.google.com/dataflow/docs/guides/templates/provided/bulk-decompress-cloud-storage))
-- create table in the GBQ web UI from the json files in GCS, providing the schema as json
+- create table in the GBQ web UI from the json files in GCS, providing the schema as json  
   (NB fields in the schema that are missing in some of the records will be safely nulled for that record)
 
 For large datasets, this workflow is carried out in batches.
@@ -26,12 +26,25 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
 
 ## Data sources
 
-- Crossref public data file
+- **Crossref public data file**
   - source and documentation: [https://www.crossref.org/learning/public-data-file/](https://www.crossref.org/learning/public-data-file/)
   - release date: 2025-03-12
   - [JSON schema](/databases/crossref/schemas/crossref_metadata_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
-  - The [dataset](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref_metadata) in Google Big Query curently contains 2 tables:
-    - [crossref_public_data_file_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_20250312) - full public data file (167,008,748 records)
-    - [crossref_public_data_file_sample_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_sample_20250312) - data file sample (10,000 records)
-  - Currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
+  - notes:
+    - the [dataset](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref_metadata) in Google Big Query curently contains 2 tables:
+      - [crossref_public_data_file_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_20250312) - full public data file (167,008,748 records)
+      - [crossref_public_data_file_sample_20250312](https://console.cloud.google.com/bigquery?ws=!1m5!1m4!4m3!1ssos-datasources!2scrossref_metadata!3scrossref_public_data_file_sample_20250312) - data file sample (10,000 records)
+    - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs
+ 
+- **Crossref members** (data underlying the Crossref API members endpoint) 
+  - source and documentation: [https://api.crossref.org/swagger-ui/index.html#/Members]
+  - sample date: 2025-05-31
+  - [JSON schema](/databases/crossref/schemas/crossref_metadata_public_datafile_202503.json)
+
+- **Crossref journals** (data underlying the Crossref API journals endpoint)
+  - source and documentation: [https://api.crossref.org/swagger-ui/index.html#/Journals]
+  - sample date: 2025-05-31
+  - [JSON schema](/databases/crossref/schemas/crossref_metadata_public_datafile_202503.json)
+
+- 
   

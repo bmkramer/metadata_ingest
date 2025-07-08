@@ -68,10 +68,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - the relation tables are provided as subsets of the full relation table, split by type of entity and (for product-product relations) type of relationship. This was done to save on downstream computing costs.
 
 - **OpenCitations Meta** [to be updated to latest version]
-  - source and documentation: https://doi.org/10.5281/zenodo.14851262
-  - release date: 2025-02-11
+  - source and documentation: https://download.opencitations.net/#meta (documentation) / https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
+  - release date: 2024-06-20
   - [JSON schemas](/databases/opencitations/schema/)
   - [SQL processing scripts](/databases/opencitations/sql/)
+  - notes:
+    - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY

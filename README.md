@@ -32,7 +32,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
   - [JSON schema](/databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - [SQL processing scripts](/databases/crossref/sql/)
   - notes:
-    - the [dataset](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref) in Google Big Query curently contains 2 tables:
+    - the dataset in Google Big Query curently contains 2 tables:
       - *crossref_public_data_file_20250312* - full public data file (167,008,748 records)
       - *crossref_public_data_file_sample_20250312* - data file sample (10,000 records)
     - currently, the table in Google Big Query is not partitioned or clustered - this would be a useful future approach to save on computing costs

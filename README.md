@@ -58,6 +58,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - release date: 2025-09-12
   - [JSON schemas](/databases/openaire/schema/)
   - [SQL processing scripts](/databases/openaire/sql/)
+  - [overview of relation tables (csv)](/databases/openaire/relation_product_product_other_20250912)
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)

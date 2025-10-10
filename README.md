@@ -54,8 +54,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - release date: 2025-01-06
 
 - **OpenAIRE**
-  - source and documentation: https://doi.org/10.5281/zenodo.14851262
-  - release date: 2025-02-11
+  - source and documentation: https://doi.org/10.5281/zenodo.17098012
+  - release date: 2025-09-12
   - [JSON schemas](/databases/openaire/schema/)
   - [SQL processing scripts](/databases/openaire/sql/)
   - notes:
@@ -66,7 +66,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - projects
       - communities
       - relations (tables indicating the relation between the different entities)
-    - the relation tables are provided as subsets of the full relation table, split by type of entity and (for product-product relations) type of relationship. This was done to save on downstream computing costs.
+    - the relation tables are provided as subsets of the full relation table, split by type of entities and (for product-product relations) type of relationship. For all reciprocal relationships, only one side is provided. This was done to save on processing as well as downstream computing costs.
 
 - **OpenCitations Meta** [to be updated to latest version]
   - source and documentation:

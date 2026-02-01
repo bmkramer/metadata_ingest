@@ -81,5 +81,5 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
-  - release date: 2024-12-02
+  - release date: 2025-11-21 (previous version 2024-12-02)
   - [JSON schema](/databases/pkp/schema/)

@@ -1,122 +1,219 @@
 [
-{
-"name": "oai_url",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "application",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "version",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "earliest_datestamp",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"name": "repository_name",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "set_spec",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "stats_id",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "total_record_count",
-"type": "INTEGER",
-"mode": "NULLABLE"
-},
-{
-"name": "issn",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "country_marc",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "country_issn",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "country_tld",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "country_ip",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "country_consolidated",
-"type": "STRING",
-"mode": "NULLABLE"
-},
-{
-"name": "last_completed_update",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"name": "first_beacon",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"name": "last_beacon",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"name": "last_oai_response",
-"type": "TIMESTAMP",
-"mode": "NULLABLE"
-},
-{
-"name": "unresponsive_endpoint",
-"type": "BOOLEAN",
-"mode": "NULLABLE"
-},
-{
-"name": "unresponsive_context",
-"type": "BOOLEAN",
-"mode": "NULLABLE"
-},
-{
-"name": "record_count_2020",
-"type": "INTEGER",
-"mode": "NULLABLE"
-},
-{
-"name": "record_count_2021",
-"type": "INTEGER",
-"mode": "NULLABLE"
-},
-{
-"name": "record_count_2022",
-"type": "INTEGER",
-"mode": "NULLABLE"
-},
-{
-"name": "record_count_2023",
-"type": "INTEGER",
-"mode": "NULLABLE"
-}
+  {
+    "name": "oai_url",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "application",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "version",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "admin_email",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "earliest_datestamp",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "repository_name",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "set_spec",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "context_name",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "stats_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "total_record_count",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "issn",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_marc",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_issn",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_doaj",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_tld",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_ip",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "country_consolidated",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "best_doaj_url",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "last_completed_update",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "first_beacon",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "last_beacon",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "last_oai_response",
+    "mode": "NULLABLE",
+    "type": "TIMESTAMP",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "unresponsive_endpoint",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "unresponsive_context",
+    "mode": "NULLABLE",
+    "type": "BOOLEAN",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2020",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2021",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2022",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2023",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2024",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "record_count_2025",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "region",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  }
 ]

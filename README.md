@@ -41,12 +41,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
  
 - **Crossref members** (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
-  - sample date: 2025-05-31 (previous version 2025-05-31)
+  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
-  - sample date: 2025-05-31 (previous version 2025-05-31)
+  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
 - **DataCite public data file** 

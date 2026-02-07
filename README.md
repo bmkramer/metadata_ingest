@@ -49,9 +49,11 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - sample date: 2025-05-31
   - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
 
-- **DataCite public data file**  [IN PROGRESS]
-  - source and documentation: https://datafiles.datacite.org/datafiles/public-2024
-  - release date: 2025-01-06
+- **DataCite public data file** 
+  - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
+  - release date: 2026-01-06
+  - [JSON schemas](/databases/datacite/schema/)
+  - [Python script for preprocessing (on Codeberg)](/databases/openaire//count_and_split.py)
 
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.17098012

@@ -1,4 +1,6 @@
-[*Note: This repository is hosted on [Codeberg](https://codeberg.org/TwoBirds/metadata_ingest/) and mirrored to [Github](https://github.com/bmkramer/metadata_ingest)*]
+[*Note: This repository is hosted on [Codeberg](https://codeberg.org/TwoBirds/metadata_ingest/) and mirrored to [Github](https://github.com/bmkramer/metadata_ingest)*] 
+
+test mirror
 
 # Metadata ingest 
 

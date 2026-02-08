@@ -54,7 +54,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **DataCite public data file** 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
-  - [JSON schema](/databases/datacite/schema/)
+  - [JSON schema](/databases/datacite/schema/datacite_public_datafile_202601.json)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
 - **OpenAIRE**

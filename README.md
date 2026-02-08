@@ -23,7 +23,7 @@ For large datasets, this workflow is carried out in batches.
 This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
 _(NB These steps are resource intensive, and in future probably better done locally)_    
 
-For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](/databases).
+For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](/databases). [test1](./databases) [test2](databases)
 
 Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to also save a copy on EU servers.
 

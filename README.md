@@ -23,7 +23,7 @@ For large datasets, this workflow is carried out in batches.
 This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
 _(NB These steps are resource intensive, and in future probably better done locally)_    
 
-For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](/databases). [test1](./databases) [test2](databases)
+For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](./databases).
 
 Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to also save a copy on EU servers.
 
@@ -34,8 +34,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **Crossref public data file**
   - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12
-  - [JSON schema](/databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
-  - [SQL processing scripts](/databases/crossref/sql/)
+  - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
+  - [SQL processing scripts](./databases/crossref/sql/)
   - notes:
     - the dataset in Google Big Query currently contains 2 tables:
       - full public data file (167,008,748 records)
@@ -44,25 +44,25 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **Crossref members** (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
   - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
-  - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
+  - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
-  - [JSON schema](/databases/crossref/schema/crossref_members_schema.json)
+  - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **DataCite public data file** 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
-  - [JSON schema](/databases/datacite/schema/datacite_public_datafile_202601.json)
+  - [JSON schema](./databases/datacite/schema/datacite_public_datafile_202601.json)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.17098012
   - release date: 2025-09-12
-  - [JSON schemas](/databases/openaire/schema/)
-  - [Python script to count and split tables](/databases/openaire//count_and_split.py)
-  - [overview of relation tables (csv)](/databases/openaire/relation_tables_20250912.csv)
+  - [JSON schemas](./databases/openaire/schema/)
+  - [Python script to count and split tables](./databases/openaire//count_and_split.py)
+  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20250912.csv)
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)
@@ -78,7 +78,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
-  - [JSON schema](/databases/opencitations/schema/)
+  - [JSON schema](./databases/opencitations/schema/)
   - SQL processing scripts [none]
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
@@ -86,4 +86,4 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
-  - [JSON schema](/databases/pkp/schema/)
+  - [JSON schema](./databases/pkp/schema/)

@@ -1,7 +1,5 @@
 [*Note: This repository is hosted on [Codeberg](https://codeberg.org/TwoBirds/metadata_ingest/) and mirrored to [Github](https://github.com/bmkramer/metadata_ingest)*] 
 
-test mirror
-
 # Metadata ingest 
 
 Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query.

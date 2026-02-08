@@ -13,6 +13,7 @@ _(this still needs to be wrapped in e.g. a Python script)_
 
 - download datafile(s) to local
 - extract folder(s) where applicable
+- make any modifications to internal files for compatibility with Google BigQuery
 - upload folder(s) with compressed json files (json.gz or jsonl.gz) to a Google Cloud Storage (GCS) bucket
 - (optional: extract all files using a [Dataflow template](https://cloud.google.com/dataflow/docs/guides/templates/provided/bulk-decompress-cloud-storage))
 - create table in the GBQ web UI from the json files in GCS, providing the schema as json  

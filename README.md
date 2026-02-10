@@ -26,7 +26,7 @@ _(NB These steps are resource intensive, and in future probably better done loca
 
 For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](./databases).
 
-Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to also save a copy on EU servers.
+Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to host the tables in location EU with a miror in location US to maintain existing interoperability across regions.
 
 Tables are currently not partitioned or clustered - this would be a useful future approach to save on computing costs
 

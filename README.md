@@ -4,6 +4,7 @@
 
 Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query.
 
+Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to host the tables in location EU with a miror in location US to maintain existing interoperability across regions.
 
 To use the data for your own analysis, you would need your own [Google Cloud project](https://console.cloud.google.com/projectcreate), to which processing/compute costs would be billed. There's a [free trial period](https://cloud.google.com/free/docs/free-cloud-features) during which you have $300 credit, and there is a [free tier](https://cloud.google.com/bigquery/pricing) of 1 TB processing per month.
 
@@ -25,8 +26,6 @@ This workflow assumes data can be imported 'as is'. In cases where data first ne
 _(NB These steps are resource intensive, and in future probably better done locally)_    
 
 For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](./databases).
-
-Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to host the tables in location EU with a miror in location US to maintain existing interoperability across regions.
 
 Tables are currently not partitioned or clustered - this would be a useful future approach to save on computing costs
 

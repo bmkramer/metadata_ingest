@@ -21,7 +21,7 @@ AFFILIATIONS AS (
 SELECT
 o.id,
 STRUCT(o.id, o.legalname, o.country.code as country, o.pids, r.ror) as organization
-FROM `sos-datasources.openaire.organization_20250912` as o
+FROM `sos-datasources.openaire.organization_20250912`  as o
 LEFT JOIN RORS_ARRAY as r ON o.id = r.id
 ),
 
@@ -140,7 +140,7 @@ publications.*,
 affiliations.organization as organization,
 projects.project as project,
 citation.citations as citations,
-citation.references as references,
+reference.references as references,
 
 FROM SOURCES as publications
 
@@ -162,7 +162,7 @@ LEFT JOIN (SELECT
   publications.id as id,
   ARRAY_AGG(p.project IGNORE NULLS) as project
   FROM SOURCES as publications
-  LEFT JOIN (SELECT * FROM `sos-datasources.relation_product_project_20250912` WHERE relType.type = "outcome") as relations
+  LEFT JOIN (SELECT * FROM `sos-datasources.openaire.relation_product_project_20250912` WHERE relType.type = "outcome") as relations
   ON publications.id = relations.source
   LEFT JOIN PROJECTS as p
   ON relations.target = p.id
@@ -177,8 +177,8 @@ LEFT JOIN (SELECT
   source as id,
   COUNTIF(relType.name = "Cites") as references,
   FROM `sos-datasources.openaire.relation_product_product_cites_20250912`
-  GROUP BY id) as citation
-ON publications.id = citation.id
+  GROUP BY id) as reference
+ON publications.id = reference.id
 
 LEFT JOIN (SELECT
   target as id,

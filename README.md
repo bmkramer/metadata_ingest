@@ -87,3 +87,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
   - [JSON schema](./databases/pkp/schema/)
+
+- **Truthtables**
+  - Processed tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
+  - Created to facilitate comparison of metadata coverage across sources
+  - Data sources:
+      - Crossref (data snapshot 20260131)
+      - OpenAlex (data snapshot 20260202)
+      - OpenAIRE (data snapshot 20250912)
+      - DataCite (to be added)
+  - metadata elements: abstract, authors (string and PIDs), affiliations (string and PIDs), references, citations, fields/subjects, venue and funders
+  - [SQL processing scripts](./databases/truthtables/)

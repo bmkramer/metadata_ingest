@@ -2,11 +2,13 @@
 
 # Metadata ingest 
 
-Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query.
+Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query. 
 
 Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to host the tables in location EU with a miror hosted in location US to maintain existing interoperability across regions.
 
 To use the data for your own analysis, you would need your own [Google Cloud project](https://console.cloud.google.com/projectcreate), to which processing/compute costs would be billed. There's a [free trial period](https://cloud.google.com/free/docs/free-cloud-features) during which you have $300 credit, and there is a [free tier](https://cloud.google.com/bigquery/pricing) of 1 TB processing per month.
+
+Dataset collection maintained by [Bianda Kramer](https://orcid.org/0000-0002-5965-6560) and [Cameron Neylon](https://orcid.org/0000-0002-0068-716X). 
 
 ## Workflow
 
@@ -22,10 +24,9 @@ _(this still needs to be wrapped in e.g. a Python script)_
 
 For large datasets, this workflow is carried out in batches.
 
-This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
-_(NB These steps are resource intensive, and in future probably better done locally)_    
+This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), this is preferably done locally, using Python scripts. Alternatively, the extracted JSONL files are can first be ingested as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.     
 
-For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](./databases).
+For each data source, JSON schemas and (where applicable) SQL and/or Python scripts used for transformation are available in the folder [databases](./databases).
 
 Tables are currently not partitioned or clustered - this would be a useful future approach to save on computing costs
 

@@ -89,7 +89,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/pkp/schema/)
 
 - **Truthtables**
-  - Processed tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
+  - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources
   - Data sources:
       - Crossref (data snapshot 20260131)
@@ -97,4 +97,4 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - OpenAIRE (data snapshot 20250912)
       - DataCite (to be added)
   - metadata elements: abstract, authors (string and PIDs), affiliations (string and PIDs), references, citations, fields/subjects, venue and funders
-  - [SQL processing scripts](./databases/truthtables/)
+  - [SQL processing scripts](./databases/truthtables/sql)

@@ -12,7 +12,7 @@ Dataset collection maintained by [Bianda Kramer](https://orcid.org/0000-0002-596
 
 ## Workflow
 
-_(this still needs to be wrapped in e.g. a Python script)_ 
+_(this could also be wrapped in e.g. a Python script)_ 
 
 - download datafile(s) to local
 - extract folder(s) where applicable
@@ -66,7 +66,19 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - automatic schema detection from csv
     - DOAJ also makes data snapshot availabe as JSON file
-  
+
+- **GOA** (Walt Crawford Gold Open Access datasets)
+  - source and documentation:
+    - GOA5 (2014-2019) https://doi.org/10.6084/m9.figshare.12543080
+    - GOA6 (2015-2020) https://doi.org/10.6084/m9.figshare.14787888
+    - GOA7 (2016-2021) https://doi.org/10.6084/m9.figshare.19929179
+    - GOA8 (2017-2022) https://doi.org/10.6084/m9.figshare.23203955
+    - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
+    - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
+  - notes:
+    - automatic schema detection from csv
+    - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
+
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.17098012
   - release date: 2025-09-12

@@ -74,7 +74,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doaj.org/csv (download)
   - release date: 2026-01-03 (previous version 2025-07-31)
   - notes:
-    - automatic schema detection from csv
+    - [JSON schema](./databases/doaj/schema/doaj.json)) (automatic schema detection from csv)
     - DOAJ also makes data snapshot availabe as JSON file
 
 - **GOA** (Walt Crawford Gold Open Access datasets)
@@ -86,7 +86,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
   - notes:
-    - automatic schema detection from csv
+    - [JSON schema GOA10](./databases/doaj/schema/doaj.json)) (automatic schema detection from csv)
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - **OpenAIRE**

@@ -37,6 +37,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
     - journal_level_apcs: https://dataverse.harvard.edu/file.xhtml?fileId=10272829&version=1.0 (download)
+  - release date: 2024-06-12
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
     - automatic schema detection

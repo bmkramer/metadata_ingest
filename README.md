@@ -58,6 +58,15 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/datacite/schema/datacite_public_datafile_202601.json)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
+- **DOAJ**
+  - source and documentation:
+    - https://doaj.org/docs/public-data-dump/ (documentation)
+    - https://doaj.org/csv (download)
+  - release date: 2026-01-03 (previous version 2025-07-31)
+  - notes:
+    - automatic schema detection from csv
+    - DOAJ also makes data snapshot availabe as JSON file
+  
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.17098012
   - release date: 2025-09-12

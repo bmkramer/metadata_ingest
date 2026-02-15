@@ -32,6 +32,15 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 ## Data sources
 
+- **Butler APCs**
+  - source and documentation:
+    - https://doi.org/10.7910/DVN/CR1MMV (documentation)
+    - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
+    - journal_level_apcs: https://dataverse.harvard.edu/file.xhtml?fileId=10272829&version=1.0 (download)
+  - notes:
+    - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
+    - automatic schema detection
+
 - **Crossref public data file**
   - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12

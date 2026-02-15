@@ -89,6 +89,15 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - release date: 2025-11-21 (previous version 2024-12-02)
   - [JSON schema](./databases/pkp/schema/)
 
+- **ROR**
+  - source and documentation:
+    - https://ror.readme.io/docs/data-dump (documentation)
+    - https://doi.org/10.5281/zenodo.6347574 (download)
+  - release date: 2026-01-29 
+  - [JSON schema](./databases/ror/schema/)
+
+  
+
 - **Truthtables**
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources

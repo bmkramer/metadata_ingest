@@ -65,7 +65,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **DataCite public data file** 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
-  - [JSON schema](./databases/datacite/schema/datacite_public_datafile_202601.json)
+  - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
 - **DOAJ**
@@ -74,7 +74,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doaj.org/csv (download)
   - release date: 2026-01-03 (previous version 2025-07-31)
   - notes:
-    - [JSON schema](./databases/doaj/schema/doaj.json) (automatic schema detection from csv)
+    - [JSON schema](./databases/doaj/schema/) (automatic schema detection from csv)
     - DOAJ also makes data snapshot availabe as JSON file
 
 - **GOA** (Walt Crawford Gold Open Access datasets)
@@ -86,7 +86,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
   - notes:
-    - [JSON schema GOA10](./databases/doaj/schema/goa10.json) (automatic schema detection from csv)
+    - [JSON schema GOA10](./databases/doaj/schema/) (automatic schema detection from csv)
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - **OpenAIRE**
@@ -104,6 +104,13 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - communities
       - relations (tables indicating the relation between the different entities)
     - the relation tables are provided as subsets of the full relation table, split by type of entities and (for product-product relations) type of relationship. For all reciprocal relationships, only one side is provided. This was done to save on processing as well as downstream computing costs.
+
+- **OpenAPC**
+  - source and documentation:
+    - https://www.openapc.net/ https://github.com/OpenAPC/openapc-de/ (documentation)
+    - https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv (download)
+  - release date: 2025-08-01 
+  - [JSON schema](./databases/openapc/schema/)
 
 - **OpenCitations Meta** [to be updated to latest version]
   - source and documentation:
@@ -126,8 +133,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doi.org/10.5281/zenodo.6347574 (download)
   - release date: 2026-01-29 
   - [JSON schema](./databases/ror/schema/)
-
-  
 
 - **Truthtables**
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.

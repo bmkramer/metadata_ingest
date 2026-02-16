@@ -74,7 +74,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doaj.org/csv (download)
   - release date: 2026-01-03 (previous version 2025-07-31)
   - notes:
-    - [JSON schema](./databases/doaj/schema/doaj.json)) (automatic schema detection from csv)
+    - [JSON schema](./databases/doaj/schema/doaj.json) (automatic schema detection from csv)
     - DOAJ also makes data snapshot availabe as JSON file
 
 - **GOA** (Walt Crawford Gold Open Access datasets)

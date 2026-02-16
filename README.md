@@ -38,9 +38,9 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
     - journal_level_apcs: https://dataverse.harvard.edu/file.xhtml?fileId=10272829&version=1.0 (download)
   - release date: 2024-06-12
+  - [JSON schemas](./databases/butler_apcs/schema/) (automatic schema detection from csv)
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
-    - automatic schema detection
 
 - **Crossref public data file**
   - source and documentation: https://www.crossref.org/learning/public-data-file/
@@ -86,7 +86,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
   - notes:
-    - [JSON schema GOA10](./databases/doaj/schema/doaj.json)) (automatic schema detection from csv)
+    - [JSON schema GOA10](./databases/doaj/schema/goa10.json) (automatic schema detection from csv)
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - **OpenAIRE**

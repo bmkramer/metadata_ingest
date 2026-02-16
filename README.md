@@ -8,8 +8,7 @@ Currently, the tables in the GBQ dataset SOS Datasources are stored in location 
 
 To use the data for your own analysis, you would need your own [Google Cloud project](https://console.cloud.google.com/projectcreate), to which processing/compute costs would be billed. There's a [free trial period](https://cloud.google.com/free/docs/free-cloud-features) during which you have $300 credit, and there is a [free tier](https://cloud.google.com/bigquery/pricing) of 1 TB processing per month.
 
-Dataset collection maintained by [Bianda Kramer](https://orcid.org/0000-0002-5965-6560) and [Cameron Neylon](https://orcid.org/0000-0002-0068-716X).  
-Part of [ORION-DBs](https://orion-dbs.community/), a  collection of publicly available datasets on Google BigQuery.
+Dataset collection maintained by [Bianda Kramer](https://orcid.org/0000-0002-5965-6560) and [Cameron Neylon](https://orcid.org/0000-0002-0068-716X). Part of [ORION-DBs](https://orion-dbs.community/), a  collection of publicly available datasets on Google BigQuery.
 
 <a href="https://orion-dbs.community/" style="text-align: center">
 <img src="./static/images/orion_dbs_cropped.png" alt ="The constellation of Orion as seen from the southern hemisphere. Image from Mary Orr (1896), 'Southern Stars: A Guide to the Constellations Visible in the Southern Hemisphere', Gall and Inglis, London and Edinburgh. Illustration probably by William Peacock and Co." width="20%" align="center" >

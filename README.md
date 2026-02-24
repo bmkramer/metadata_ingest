@@ -95,10 +95,10 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.17098012
-  - release date: 2025-09-12
+  - release date: 2026-01-29 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
   - [Python script to count and split tables](./databases/openaire//count_and_split.py)
-  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20250912.csv)
+  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20260129.csv)
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)

@@ -126,6 +126,13 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 
+- **OpenEditors**
+  - source and documentation:
+      - https://github.com/andreaspacher/openeditors (documentation)
+      - https://doi.org/10.5281/zenodo.19108866 (download)
+  - release date: 2026-03-17
+  - [JSON schema](./databases/openeditions/schema/)
+
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)

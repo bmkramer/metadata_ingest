@@ -42,6 +42,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
     - journal_level_apcs: https://dataverse.harvard.edu/file.xhtml?fileId=10272829&version=1.0 (download)
   - release date: 2024-06-12
+  - license: CC0
   - [JSON schemas](./databases/butler_apcs/schema/) (automatic schema detection from csv)
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
@@ -69,6 +70,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - **DataCite public data file** 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
+  - license: CC0
   - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
@@ -77,8 +79,9 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - https://doaj.org/docs/public-data-dump/ (documentation)
     - https://doaj.org/csv (download)
   - release date: 2026-01-03 (previous version 2025-07-31)
+  - license: CC0
+  - [JSON schema](./databases/doaj/schema/) (automatic schema detection from csv)
   - notes:
-    - [JSON schema](./databases/doaj/schema/) (automatic schema detection from csv)
     - DOAJ also makes data snapshot availabe as JSON file
 
 - **GOA** (Walt Crawford Gold Open Access datasets)
@@ -89,16 +92,18 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA8 (2017-2022) https://doi.org/10.6084/m9.figshare.23203955
     - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
+  - license: CC BY 4.0
+  - [JSON schema GOA10](./databases/doaj/schema/) (automatic schema detection from csv)
   - notes:
-    - [JSON schema GOA10](./databases/doaj/schema/) (automatic schema detection from csv)
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - **OpenAIRE**
-  - source and documentation: https://doi.org/10.5281/zenodo.17098012
+  - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-01-29 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
   - [Python script to count and split tables](./databases/openaire//count_and_split.py)
   - [overview of relation tables (csv)](./databases/openaire/relation_tables_20260129.csv)
+  - license: CC BY 4.0
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)
@@ -111,9 +116,11 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - **OpenAPC**
   - source and documentation:
-    - https://www.openapc.net/ https://github.com/OpenAPC/openapc-de/ (documentation)
+    - https://www.openapc.net/ (documentation)
+    - https://github.com/OpenAPC/openapc-de/ (documentation)
     - https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv (download)
-  - release date: 2025-08-01 
+  - release date: 2025-08-01
+  - license: CC BY 4.0
   - [JSON schema](./databases/openapc/schema/)
 
 - **OpenCitations Meta** [to be updated to latest version]
@@ -121,6 +128,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
+  - license: CC0
   - [JSON schema](./databases/opencitations/schema/)
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
@@ -130,18 +138,21 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - https://github.com/andreaspacher/openeditors (documentation)
       - https://doi.org/10.5281/zenodo.19108866 (download)
   - release date: 2026-03-17
+  - license: CC BY 4.0
   - [JSON schema](./databases/openeditions/schema/)
 
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
+  - license: CC0
   - [JSON schema](./databases/pkp/schema/)
 
 - **ROR**
   - source and documentation:
     - https://ror.readme.io/docs/data-dump (documentation)
     - https://doi.org/10.5281/zenodo.6347574 (download)
-  - release date: 2026-01-29 
+  - release date: 2026-01-29
+  - license: CC0 
   - [JSON schema](./databases/ror/schema/)
 
 - **Truthtables**

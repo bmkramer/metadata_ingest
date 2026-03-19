@@ -58,12 +58,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
  
 - **Crossref members** (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
-  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
+  - sample date: 2026-01-05 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
-  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
+  - sample date: 2026-01-05 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **DataCite public data file** 
@@ -122,7 +122,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
   - [JSON schema](./databases/opencitations/schema/)
-  - SQL processing scripts [none]
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 

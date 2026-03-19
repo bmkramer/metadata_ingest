@@ -163,5 +163,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - OpenAlex (data snapshot 20260202)
       - OpenAIRE (data snapshot 20250912)
       - DataCite (to be added)
-  - metadata elements: abstract, authors (string and PIDs), affiliations (string and PIDs), references, citations, fields/subjects, venue and funders
+  - license: CC0
   - [SQL processing scripts](./databases/truthtables/sql)
+  - notes:
+    - metadata elements: abstract, authors (string and PIDs), affiliations (string and PIDs), references, citations, fields/subjects, venue and funders

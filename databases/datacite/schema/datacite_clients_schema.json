@@ -12,576 +12,80 @@
     "name": "type",
     "type": "STRING",
     "mode": "NULLABLE"
-  },  
-  {
-    "name": "breakdowns",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
+  },
+  {				
+    "name": "attributes",				
+    "type": "RECORD",				
+    "mode": "NULLABLE",				
+    "fields": [	
       {
-        "name": "dois-by-issued-year",
-        "type": "RECORD",
-        "mode": "REPEATED",
-        "fields": [
-          {
-            "name": "count",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "year",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          }
-        ]
-      }
+      "name": "name",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "symbol",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "year",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "alternateName",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "description",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "language - XXX",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "clientType",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+      {
+      "name": "domains",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+       {
+      "name": "re3data",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+       {
+      "name": "opendoar",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+       {
+      "name": "url",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      },
+        {
+      "name": "created",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      "description": "Date-time field imported as string"
+      },
+        {
+      "name": "updated",
+      "type": "STRING",
+      "mode": "NULLABLE"
+      "description": "Date-time field imported as string"
+      },
     ]
-  },
-  {
-    "name": "counts",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "backfile-dois",
-        "type": "INTEGER",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "current-dois",
-        "type": "INTEGER",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "total-dois",
-        "type": "INTEGER",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "coverage",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "abstracts-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "abstracts-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "affiliations-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "affiliations-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "award-numbers-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "award-numbers-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "descriptions-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "descriptions-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "funders-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "funders-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "licenses-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "licenses-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "orcids-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "orcids-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "references-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "references-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "resource-links-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "resource-links-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "ror-ids-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "ror-ids-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "similarity-checking-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "similarity-checking-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "update-policies-backfile",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "update-policies-current",
-        "type": "FLOAT",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "coverage-type",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "all",
-        "type": "RECORD",
-        "mode": "NULLABLE",
-        "fields": [
-          {
-            "name": "abstracts",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "affiliations",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "award-numbers",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "descriptions",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "funders",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "last-status-check-time",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "licenses",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "orcids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "references",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "resource-links",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "ror-ids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "similarity-checking",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "update-policies",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          }
-        ]
-      },
-      {
-        "name": "backfile",
-        "type": "RECORD",
-        "mode": "NULLABLE",
-        "fields": [
-          {
-            "name": "abstracts",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "affiliations",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "award-numbers",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "descriptions",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "funders",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "last-status-check-time",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "licenses",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "orcids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "references",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "resource-links",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "ror-ids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "similarity-checking",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "update-policies",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          }
-        ]
-      },
-      {
-        "name": "current",
-        "type": "RECORD",
-        "mode": "NULLABLE",
-        "fields": [
-          {
-            "name": "abstracts",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "affiliations",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "award-numbers",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "descriptions",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "funders",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "last-status-check-time",
-            "type": "INTEGER",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "licenses",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "orcids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "references",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "resource-links",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "ror-ids",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "similarity-checking",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          },
-          {
-            "name": "update-policies",
-            "type": "FLOAT",
-            "mode": "NULLABLE"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "flags",
-    "type": "RECORD",
-    "mode": "NULLABLE",
-    "fields": [
-      {
-        "name": "deposits",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-abstracts-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-abstracts-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-affiliations-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-affiliations-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-articles",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-award-numbers-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-award-numbers-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-descriptions-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-descriptions-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-funders-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-funders-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-licenses-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-licenses-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-orcids-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-orcids-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-references-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-references-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-resource-links-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-resource-links-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-ror-ids-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-ror-ids-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-similarity-checking-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-similarity-checking-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-update-policies-backfile",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "deposits-update-policies-current",
-        "type": "BOOLEAN",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "issn-type",
-    "type": "RECORD",
-    "mode": "REPEATED",
-    "fields": [
-      {
-        "name": "type",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "value",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      }
-    ]
-  },
-  {
-    "name": "last-status-check-time",
-    "type": "INTEGER",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "publisher",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "title",
-    "type": "STRING",
-    "mode": "NULLABLE"
-  },
-  {
-    "name": "subjects",
-    "type": "STRING",
-    "mode": "REPEATED"
   }
-]
+  ]
 }

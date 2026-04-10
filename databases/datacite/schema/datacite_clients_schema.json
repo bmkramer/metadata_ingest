@@ -1,7 +1,7 @@
 {
   "name": "data",
   "type": "RECORD",
-  "mode": "NULLABLE",
+  "mode": "REPEATED",
   "fields": [
   {
     "name": "id",
@@ -17,7 +17,7 @@
     "name": "attributes",				
     "type": "RECORD",				
     "mode": "NULLABLE",				
-    "fields": [	
+    "fields":
       {
       "name": "name",
       "type": "STRING",
@@ -44,9 +44,9 @@
       "mode": "NULLABLE"
       },
       {
-      "name": "language - XXX",
+      "name": "language",
       "type": "STRING",
-      "mode": "NULLABLE"
+      "mode": "REPEATED"
       },
       {
       "name": "clientType",
@@ -73,19 +73,111 @@
       "type": "STRING",
       "mode": "NULLABLE"
       },
-        {
+      {
       "name": "created",
       "type": "STRING",
       "mode": "NULLABLE"
       "description": "Date-time field imported as string"
       },
-        {
+      {
       "name": "updated",
       "type": "STRING",
       "mode": "NULLABLE"
       "description": "Date-time field imported as string"
       },
-    ]
-  }
-  ]
+      {
+      "name": "issn",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields":
+        {
+        "name": "issnl",
+        "type": "STRING",
+        "mode": "NULLABLE"
+        },
+        {
+        "name": "print",
+        "type": "STRING",
+        "mode": "NULLABLE"
+        },
+        {
+        "name": "electronic",
+        "type": "STRING",
+        "mode": "NULLABLE"
+        }
+      }
+    }, --- attributes
+    {				
+    "name": "relationships",				
+    "type": "RECORD",				
+    "mode": "NULLABLE",				
+    "fields": 
+      {"name": "provider",				
+      "type": "RECORD",				
+      "mode": "NULLABLE",				
+      "fields": 
+        {		
+		"name": "data",		
+		"type": "RECORD",		
+		"mode": "REPEATED",		
+		"fields": [		
+			{	
+			"name": "id",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			},	
+			{	
+			"name": "type",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			}	
+		]		
+		}		
+      },
+      {"name": "consortium",				
+      "type": "RECORD",				
+      "mode": "NULLABLE",				
+      "fields": 
+      {		
+		"name": "data",		
+		"type": "RECORD",		
+		"mode": "REPEATED",		
+		"fields": [		
+			{	
+			"name": "id",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			},	
+			{	
+			"name": "type",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			}	
+		]		
+		}		
+      },
+      {"name": "prefixes",				
+      "type": "RECORD",				
+      "mode": "NULLABLE",				
+      "fields": 
+        {		
+		"name": "data",		
+		"type": "RECORD",		
+		"mode": "REPEATED",		
+		"fields": [		
+			{	
+			"name": "id",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			},	
+			{	
+			"name": "type",	
+			"type": "STRING",	
+			"mode": "NULLABLE"	
+			}	
+		]		
+		}		
+      },    
+    } --- relationships	
+] --- data
 }

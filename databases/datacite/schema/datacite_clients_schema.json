@@ -1,3 +1,4 @@
+[
 {
   "name": "data",
   "type": "RECORD",
@@ -119,8 +120,8 @@
         {		
 		"name": "data",		
 		"type": "RECORD",		
-		"mode": "REPEATED",		
-		"fields": [		
+		"mode": "NULLABLE",		
+		"fields":	
 			{	
 			"name": "id",	
 			"type": "STRING",	
@@ -131,7 +132,6 @@
 			"type": "STRING",	
 			"mode": "NULLABLE"	
 			}	
-		]		
 		}		
       },
       {"name": "consortium",				
@@ -141,8 +141,8 @@
       {		
 		"name": "data",		
 		"type": "RECORD",		
-		"mode": "REPEATED",		
-		"fields": [		
+		"mode": "NULLABLE",		
+		"fields":		
 			{	
 			"name": "id",	
 			"type": "STRING",	
@@ -177,7 +177,8 @@
 			}	
 		]		
 		}		
-      },    
+      }    
     } --- relationships	
 ] --- data
 }
+]

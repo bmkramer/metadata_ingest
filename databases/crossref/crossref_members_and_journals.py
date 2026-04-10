@@ -2,6 +2,7 @@ import requests
 import time
 import jsonlines
 
+
 email = "ADD YOUR EMAIL HERE"
 url_root = "https://api.crossref.org/"
 api_endpoint = 'journals' # one of 'journals' or 'members'

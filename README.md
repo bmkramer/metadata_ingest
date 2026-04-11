@@ -74,6 +74,18 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
+- **DataCite clients** (data underlying the DataCite API clients endpoint)
+  - source and documentation: https://support.datacite.org/reference/get_clients
+  - sample date: 2026-04-11
+  - license: CC0
+  - [cURL command](./databases/datacite/dc_clients_curl/) (to retrieve data)
+  - [JSON schema](./databases/datacite/schema/dc_clients_schema.json)
+  - [JSON schema for ingest](./databases/datacite/schema/dc_clients_ingest_schema.json)
+  - [SQL processing script](./databases/datacite/sql/)
+  - notes:
+    - use pagination to retrieve all records
+    - ingest schema includes variables *link* and *meta* from API response 
+
 - **DOAJ**
   - source and documentation:
     - https://doaj.org/docs/public-data-dump/ (documentation)

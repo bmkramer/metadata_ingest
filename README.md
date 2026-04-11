@@ -80,7 +80,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - license: CC0
   - [cURL command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
   - [JSON schema](./databases/datacite/schema/datacite_clients_schema.json)
-  - [JSON schema for ingest](./databases/datacite/schema/dc_clients_ingest_schema.json)
+  - [JSON schema for ingest](./databases/datacite/schema/datacite_clients_ingest_schema.json)
   - notes:
     - use pagination to retrieve all records
     - ingest schema includes variables *link* and *meta* from API response 

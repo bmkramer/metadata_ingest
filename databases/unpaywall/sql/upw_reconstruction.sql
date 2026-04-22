@@ -1,4 +1,4 @@
---- Script to recreate Unpaywall data structure from OpenAlex, to serve use cases that are dependent on Unpaywall structure 
+--- Script to reconstruct Unpaywall data structure from OpenAlex, to serve use cases that are dependent on Unpaywall structure 
 --- Note: 20260423 Currently in progress, not equivalent yet! 
 
 

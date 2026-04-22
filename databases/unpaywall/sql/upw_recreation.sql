@@ -18,9 +18,9 @@ TABLE_VAR AS (
 SELECT
 
 best_oa_location, -- need to be selected within
-doi,
-CONCAT("https://doi.org/",doi) as doi_url,
---- genre - this would need to be taken from Crossref to be comparable with UPW #TODO
+a.doi,
+CONCAT("https://doi.org/", a.doi) as doi_url,
+c.type as genre, --- taken directly from Crossref to be comparable with UPW
 is_paratext,
 open_access.is_oa as is_oa,
 if(primary_location.source.type = "journal", primary_location.source.is_in_doaj, null) as journal_is_in_doaj,
@@ -33,7 +33,7 @@ locations as oa_locations, -- need to be filtered and selected within
 open_access.oa_status as oa_status,
 publication_date as published_date,
 if(primary_location.source.type = "journal", primary_location.source.host_organization_name, null) as publisher,
-title,
+b.title, --- ambiguous without table specification as present in OpenAlex and Crossref
 updated_date as updated, -- this reflects any update in the OpenAlex record
 publication_year as year,
 open_access.any_repository_has_fulltext as has_repository_copy,
@@ -45,8 +45,10 @@ authorships as z_authors, --- need to be selected within
 
 
 FROM TABLE_DOIS as a
-LEFT JOIN `subugoe-collaborative.openalex_walden.works` 
+LEFT JOIN `subugoe-collaborative.openalex_walden.works` as b
 USING (doi)
+LEFT JOIN `subugoe-collaborative.cr_instant.snapshot` as c
+ON LOWER(a.doi) = LOWER(c.doi)
 
 )
 

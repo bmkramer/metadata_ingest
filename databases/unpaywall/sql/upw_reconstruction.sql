@@ -41,7 +41,12 @@ if(primary_location.source.type = "journal", primary_location.source.issn_l, nul
 locations as oa_locations_embargoed, -- need to be filtered and selected within, can only indicated all closed locations, without reliable assessment of embargo
 ---x_reported_noncompliant_copies -- this cannot be reconstructed
 ---x_error, --- this cannot be reconstructed,
-authorships as z_authors, --- need to be selected within
+(SELECT array_agg(struct(
+  au.raw_affiliation_strings, 
+  au.is_corresponding,
+  au.raw_author_name,
+  au.author_position))
+  FROM  unnest(authorships) as au) as z_authors   
 
 
 FROM TABLE_DOIS as a

@@ -44,7 +44,25 @@ if(primary_location.source.type = "journal", primary_location.source.is_oa, null
 if(primary_location.source.type = "journal", primary_location.source.issn, null) as journal_issns,
 if(primary_location.source.type = "journal", primary_location.source.issn_l, null) as journal_issn_l,
 if(primary_location.source.type = "journal", primary_location.source.display_name, null) as journal_name,
-locations as oa_locations, -- need to be filtered and selected within
+
+(SELECT array_agg(struct(
+  l.source.type as host_type, 
+  ---is_best --- not disrectly available as locations variable anymore
+  l.license,
+  ---oa_date --- this has been deprecated
+  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  IFNULL(l.pdf_url,l.landing_page_url) as url,
+  l.landing_page_url as url_for_landing_page,
+  l.pdf_url as url_for_pdf,
+  l.version,
+  IF(l.source.type = "repository", l.source.host_organization_name, null) as repository_institution,
+  ---l.endpoint_id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  ---l.id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  "deprecated" as evidence, -- will be fully deprecated
+  "deprecated" as updated --- will be fully deprecated
+  ))
+  FROM  unnest(locations) as l WHERE l.is_oa is true) as oa_locations,
+
 --- first_oa_location, --- this was based on oa_date, and cannot currently be reconstructed
 open_access.oa_status as oa_status,
 publication_date as published_date,
@@ -54,7 +72,25 @@ updated_date as updated, -- this reflects any update in the OpenAlex record
 publication_year as year,
 open_access.any_repository_has_fulltext as has_repository_copy,
 if(primary_location.source.type = "journal", primary_location.source.issn_l, null) as issn_l,
-locations as oa_locations_embargoed, -- need to be filtered and selected within, can only indicated all closed locations, without reliable assessment of embargo
+
+(SELECT array_agg(struct(
+  l.source.type as host_type, 
+  ---is_best --- not disrectly available as locations variable anymore
+  l.license,
+  ---oa_date --- this has been deprecated
+  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  IFNULL(l.pdf_url,l.landing_page_url) as url,
+  l.landing_page_url as url_for_landing_page,
+  l.pdf_url as url_for_pdf,
+  l.version,
+  IF(l.source.type = "repository", l.source.host_organization_name, null) as repository_institution,
+  ---l.endpoint_id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  ---l.id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  "deprecated" as evidence, -- will be fully deprecated
+  "deprecated" as updated --- will be fully deprecated
+  ))
+  FROM  unnest(locations) as l WHERE l.is_oa is not true) as oa_locations_embargoed, -- can only indicate all closed locations, without reliable assessment of embargo
+
 ---x_reported_noncompliant_copies -- this cannot be reconstructed
 ---x_error, --- this cannot be reconstructed,
 (SELECT array_agg(struct(

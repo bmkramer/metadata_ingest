@@ -1,5 +1,5 @@
 --- Script to reconstruct Unpaywall data structure from OpenAlex, to serve use cases that are dependent on Unpaywall structure 
---- Note: 20260423 Currently in progress, not equivalent yet! 
+--- Note: 20260423 Currently in progress, not fully equivalent yet! 
 
 
 --- filter on Crossref DOIs
@@ -84,15 +84,16 @@ if(primary_location.source.type = "journal", primary_location.source.issn_l, nul
   l.pdf_url as url_for_pdf,
   l.version,
   IF(l.source.type = "repository", l.source.host_organization_name, null) as repository_institution,
-  null as endpoint_id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
-  null as id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as endpoint_id, --- not clear what this represents, as UPW values are different from pmh_id; l.id could be used as needed (from next SUB ingest)
+  ---null as id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
   "deprecated" as evidence, -- will be fully deprecated
   "deprecated" as updated --- will be fully deprecated
   ))
   FROM  unnest(locations) as l WHERE l.is_oa is not true) as oa_locations_embargoed, -- can only indicate all closed locations, without reliable assessment of embargo
 
-  null as x_reported_noncompliant_copies, -- this cannot be reconstructed
-  null as x_error, --- this cannot be reconstructed,
+  --- null as x_reported_noncompliant_copies, -- this cannot be reconstructed; does not seem to be part of UPW data currently
+  --- null as x_error, --- this cannot be reconstructed; does not seem to be part of UPW data currently
+  
   (SELECT array_agg(struct(
   au.raw_affiliation_strings, 
   au.is_corresponding,

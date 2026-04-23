@@ -17,7 +17,23 @@ TABLE_VAR AS (
   
 SELECT
 
-best_oa_location, -- need to be selected within
+struct(
+  best_oa_location.source.type as host_type, 
+  ---is_best --- not disrectly available as locations variable anymore
+  best_oa_location.license,
+  ---oa_date --- this has been deprecated
+  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  IFNULL(best_oa_location.pdf_url,best_oa_location.landing_page_url) as url,
+  best_oa_location.landing_page_url as url_for_landing_page,
+  best_oa_location.pdf_url as url_for_pdf,
+  best_oa_location.version,
+  IF(best_oa_location.source.type = "repository", best_oa_location.source.host_organization_name, null) as repository_institution,
+  ---best_oa_location.endpoint_id -- not documented as UPW variable, best_oa_location.id can be used as needed (from next SUB ingest)
+  ---best_oa_location.id -- not documented as UPW variable, best_oa_location.id can be used as needed (from next SUB ingest)
+  "deprecated" as evidence, -- will be fully deprecated
+  "deprecated" as updated --- will be fully deprecated
+  ) as best_oa_location, 
+  
 a.doi,
 CONCAT("https://doi.org/", a.doi) as doi_url,
 c.type as genre, --- taken directly from Crossref to be comparable with UPW

@@ -19,17 +19,17 @@ SELECT
 
 struct(
   best_oa_location.source.type as host_type, 
-  ---is_best --- not disrectly available as locations variable anymore
+  null as is_best, --- not disrectly available as locations variable anymore
   best_oa_location.license,
-  ---oa_date --- this has been deprecated
-  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  null as oa_date, --- this has been deprecated
+  null as pmh_id, --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
   IFNULL(best_oa_location.pdf_url,best_oa_location.landing_page_url) as url,
   best_oa_location.landing_page_url as url_for_landing_page,
   best_oa_location.pdf_url as url_for_pdf,
   best_oa_location.version,
   IF(best_oa_location.source.type = "repository", best_oa_location.source.host_organization_name, null) as repository_institution,
-  ---best_oa_location.endpoint_id -- not documented as UPW variable, best_oa_location.id can be used as needed (from next SUB ingest)
-  ---best_oa_location.id -- not documented as UPW variable, best_oa_location.id can be used as needed (from next SUB ingest)
+  null as endpoint_id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
   "deprecated" as evidence, -- will be fully deprecated
   "deprecated" as updated --- will be fully deprecated
   ) as best_oa_location, 
@@ -47,23 +47,23 @@ if(primary_location.source.type = "journal", primary_location.source.display_nam
 
 (SELECT array_agg(struct(
   l.source.type as host_type, 
-  ---is_best --- not disrectly available as locations variable anymore
+  null as is_best, --- not disrectly available as locations variable anymore
   l.license,
-  ---oa_date --- this has been deprecated
-  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  null as oa_date, --- this has been deprecated
+  null as pmh_id, --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
   IFNULL(l.pdf_url,l.landing_page_url) as url,
   l.landing_page_url as url_for_landing_page,
   l.pdf_url as url_for_pdf,
   l.version,
   IF(l.source.type = "repository", l.source.host_organization_name, null) as repository_institution,
-  ---l.endpoint_id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
-  ---l.id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as endpoint_id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
   "deprecated" as evidence, -- will be fully deprecated
   "deprecated" as updated --- will be fully deprecated
   ))
   FROM  unnest(locations) as l WHERE l.is_oa is true) as oa_locations,
 
---- first_oa_location, --- this was based on oa_date, and cannot currently be reconstructed
+null as first_oa_location, --- this was based on oa_date, and cannot currently be reconstructed
 open_access.oa_status as oa_status,
 publication_date as published_date,
 if(primary_location.source.type = "journal", primary_location.source.host_organization_name, null) as publisher,
@@ -75,25 +75,25 @@ if(primary_location.source.type = "journal", primary_location.source.issn_l, nul
 
 (SELECT array_agg(struct(
   l.source.type as host_type, 
-  ---is_best --- not disrectly available as locations variable anymore
+  null as is_best, --- not disrectly available as locations variable anymore
   l.license,
-  ---oa_date --- this has been deprecated
-  ---pmh_id --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
+  null as oa_date, --- this has been deprecated
+  null as pmh_id, --- not in OpenAlex, could use best_oa_location.id which can be pmh_id. NB this will be included in next SUB ingest of OpenAlex
   IFNULL(l.pdf_url,l.landing_page_url) as url,
   l.landing_page_url as url_for_landing_page,
   l.pdf_url as url_for_pdf,
   l.version,
   IF(l.source.type = "repository", l.source.host_organization_name, null) as repository_institution,
-  ---l.endpoint_id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
-  ---l.id -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as endpoint_id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
+  null as id, -- not documented as UPW variable, l.id can be used as needed (from next SUB ingest)
   "deprecated" as evidence, -- will be fully deprecated
   "deprecated" as updated --- will be fully deprecated
   ))
   FROM  unnest(locations) as l WHERE l.is_oa is not true) as oa_locations_embargoed, -- can only indicate all closed locations, without reliable assessment of embargo
 
----x_reported_noncompliant_copies -- this cannot be reconstructed
----x_error, --- this cannot be reconstructed,
-(SELECT array_agg(struct(
+  null as x_reported_noncompliant_copies, -- this cannot be reconstructed
+  null as x_error, --- this cannot be reconstructed,
+  (SELECT array_agg(struct(
   au.raw_affiliation_strings, 
   au.is_corresponding,
   au.raw_author_name,

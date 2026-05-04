@@ -141,3 +141,4 @@ USING (acronym)
 )
 
 SELECT * FROM TABLE_UNION
+ORDER BY acronym, provenance

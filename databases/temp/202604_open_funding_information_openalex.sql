@@ -108,43 +108,36 @@ GROUP BY ALL
 ),
 
 TABLE_UNION AS (
----awards and works linked to awars, by provenance
-SELECT 
-*,
+---awards and works linked to awards, by provenance
+SELECT
+acronym,
+provenance,
+award_start_year_min,
+award_start_year_max,
+award_count,
+work_ids_award,
+dois_cr_article_award,
 null as work_ids_funder_only,
 null as dois_cr_article_funder_only
 FROM TABLE_JOIN_AWARDS_PROVENANCE
 
-UNION ALL 
+UNION ALL
 
 --- works linked to awards, all
-SELECT 
-acronym,  
+--- include works linked to funders only
+SELECT
+a.acronym,
 "all" as provenance,
 null as award_start_year_min,
 null as award_start_year_max,
 null as award_count,
-work_ids_award,
-dois_cr_article_award,
-null as work_ids_funder,
-null as dois_cr_article_funder
-FROM TABLE_AWARDS_WORKS_AGG_ALL
-
-UNION ALL
-
---- works only linked to funder
-SELECT 
-acronym,  
-null as provenance,
-null as award_start_year_min,
-null as award_start_year_max,
-null as award_count,
-null as work_ids_award,
-null as dois_cr_article_award,
-work_ids_funder,
-dois_cr_article_funder
-FROM TABLE_FUNDERS_WORKS_AGG
+a.work_ids_award,
+a.dois_cr_article_award,
+(b.work_ids_funder- a.work_ids_award) as work_ids_funder_only,
+(b.dois_cr_article_funder - a.dois_cr_article_award) as dois_cr_article_funder_only
+FROM TABLE_AWARDS_WORKS_AGG_ALL as a
+LEFT JOIN TABLE_FUNDERS_WORKS_AGG as b 
+USING (acronym)
 )
 
-SELECT * FROM TABLE_UNION
-ORDER BY acronym, provenance DESC
+SELECT * FROM TABLE_FUNDERS_WORKS_AGG

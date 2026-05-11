@@ -615,6 +615,33 @@
             "type": "RECORD",
             "mode": "REPEATED",
             "fields": [
+              {		
+        		"name": "affiliation",		
+        		"type": "RECORD",		
+        		"mode": "REPEATED",		
+        		"fields": [
+                  {	
+                    "name": "affiliationIdentifier",
+                    "type": "STRING",	
+                    "mode": "NULLABLE"
+                  },
+                  {	
+                    "name": "affiliationIdentifierScheme",
+                    "type": "STRING",	
+                    "mode": "NULLABLE"
+                  },
+                  {	
+                    "name": "name",
+                    "type": "STRING",	
+                    "mode": "NULLABLE"
+                  },
+                  {	
+                    "name": "schemeUri",
+                    "type": "STRING",	
+                    "mode": "NULLABLE"
+                  }
+                ]
+              },
               {
                 "name": "contributorType",
                 "type": "STRING",

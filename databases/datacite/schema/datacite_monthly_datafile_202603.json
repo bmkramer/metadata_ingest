@@ -663,6 +663,28 @@
                 "mode": "NULLABLE"
               },
               {
+                "name": "nameIdentifiers",
+                "type": "RECORD",
+                "mode": "REPEATED",	
+                "fields": [
+                  {
+                    "name": "nameIdentifier",	
+                    "type": "STRING",	
+                    "mode": "NULLABLE"	
+                  },	
+                  {	
+                    "name": "nameIdentifierScheme",	
+        			"type": "STRING",	
+        			"mode": "NULLABLE"
+                  },
+                  {	
+        			"name": "schemeUri",	
+        			"type": "STRING",	
+        			"mode": "NULLABLE"
+                  }	
+                ]
+              },		
+              {
                 "name": "nameType",
                 "type": "STRING",
                 "mode": "NULLABLE"

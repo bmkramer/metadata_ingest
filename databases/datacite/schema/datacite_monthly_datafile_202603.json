@@ -798,6 +798,11 @@
         "mode": "NULLABLE"
       },
       {
+        "name": "sizes",
+        "type": "STRING",
+        "mode": "REPEATED"
+      },
+      {
         "name": "source",
         "type": "STRING",
         "mode": "NULLABLE"

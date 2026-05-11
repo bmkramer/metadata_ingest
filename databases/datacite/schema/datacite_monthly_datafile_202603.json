@@ -101,6 +101,11 @@
         ]
       },
       {
+        "name": "contentUrl",
+        "type": "STRING",
+        "mode": "NULLABLE",
+      },
+      {
         "name": "contributors",
         "type": "RECORD",
         "mode": "REPEATED",

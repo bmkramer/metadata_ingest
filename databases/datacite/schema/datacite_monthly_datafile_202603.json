@@ -680,6 +680,11 @@
             "mode": "NULLABLE"
           },
           {
+            "name": "issue",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
             "name": "lastPage",
             "type": "STRING",
             "mode": "NULLABLE"
@@ -757,7 +762,12 @@
                 "mode": "NULLABLE"
               }
             ]
-          }
+          },
+          {
+            "name": "volume",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
         ]
       },
       {

@@ -103,7 +103,7 @@
       {
         "name": "contentUrl",
         "type": "STRING",
-        "mode": "NULLABLE"
+        "mode": "REPEATED"
       },
       {
         "name": "contributors",

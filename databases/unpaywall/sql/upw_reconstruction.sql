@@ -1,12 +1,13 @@
 --- Script to reconstruct Unpaywall data structure from OpenAlex, to serve use cases that are dependent on Unpaywall structure 
---- Note: 20260423 Currently in progress, not fully equivalent yet! 
+--- Current version using 20260330 OpenAlex data snapshot made available by SUB Göttingen as part of ORION-DBs collective. 
 
 
 --- filter on Crossref DOIs
 --- at this point, can also check whether resulting list contains duplicate dois 
+--- this uses the indexed_in field in OpenALex as a proxy to identify Crossref DOIs
 WITH TABLE_DOIS AS (
 
-SELECT 
+SELECT DISTINCT
 doi 
 FROM (SELECT doi, CASE WHEN (SELECT COUNT(1) FROM UNNEST(indexed_in) AS i WHERE i = "crossref") > 0 THEN TRUE ELSE FALSE END as is_crossref_doi FROM `subugoe-collaborative.openalex_walden.works` ) WHERE is_crossref_doi
 

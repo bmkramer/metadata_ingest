@@ -57,12 +57,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - full public data file (167,008,748 records)
       - data file sample (10,000 records)
  
-- ### Crossref members (data underlying the Crossref API members endpoint) 
+- ### Crossref members
+  (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-- ### Crossref journals (data underlying the Crossref API journals endpoint)
+- ### Crossref journals
+(data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
@@ -146,7 +148,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openapc/schema/)
 
 - ### OpenCitations Meta
-  [to be updated to latest version]
+  (to be updated to latest version!)
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)

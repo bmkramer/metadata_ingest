@@ -28,7 +28,7 @@ _(this could also be wrapped in e.g. a Python script)_
 
 For large datasets, this workflow is carried out in batches.
 
-This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), this is preferably done locally, using Python scripts. Alternatively, the extracted JSONL files are can first be ingested as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.     
+This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), this is preferably done locally, using Python scripts (work on developing a more automated approach for preprocessing is currently underway). Alternatively, the extracted JSONL files are can first be ingested as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.     
 
 For each data source, JSON schemas and (where applicable) SQL and/or Python scripts used for transformation are available in the folder [databases](./databases).
 
@@ -64,7 +64,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - ### Crossref journals
-(data underlying the Crossref API journals endpoint)
+  (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
@@ -148,7 +148,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openapc/schema/)
 
 - ### OpenCitations Meta
-  (to be updated to latest version!)
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
@@ -157,6 +156,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/opencitations/schema/)
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
+    - to be updated to latest version
 
 - ### OpenEditors
   - source and documentation:
@@ -180,7 +180,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - license: CC0 
   - [JSON schema](./databases/ror/schema/)
 
-- ###Truthtables
+- ### Truthtables
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources
   - Data sources:

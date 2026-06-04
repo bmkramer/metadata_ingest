@@ -36,7 +36,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 ## Data sources
 
-### Butler APCs
+- ### Butler APCs
   - source and documentation:
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
@@ -47,7 +47,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
-### Crossref public data file
+- ### Crossref public data file
   - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12
   - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
@@ -57,12 +57,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - full public data file (167,008,748 records)
       - data file sample (10,000 records)
  
-### Crossref members (data underlying the Crossref API members endpoint) 
+- ### Crossref members (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-### Crossref journals (data underlying the Crossref API journals endpoint)
+- ### Crossref journals (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
@@ -74,7 +74,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
-- **DataCite clients** (data underlying the DataCite API clients endpoint)
+- ### DataCite clients
+  (data underlying the DataCite API clients endpoint)
   - source and documentation: https://support.datacite.org/reference/get_clients
   - sample date: 2026-04-11
   - license: CC0
@@ -85,7 +86,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - use pagination to retrieve all records
     - ingest schema includes variables *link* and *meta* from API response 
 
-- **DOAJ**
+- ### DOAJ
   - source and documentation:
     - https://doaj.org/docs/public-data-dump/ (documentation)
     - https://doaj.org/csv (download)
@@ -95,7 +96,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - DOAJ also makes data snapshot availabe as JSON file
 
-- **GOA** (Walt Crawford Gold Open Access datasets)
+- ### GOA 
+  (Walt Crawford Gold Open Access datasets)
   - source and documentation:
     - GOA5 (2014-2019) https://doi.org/10.6084/m9.figshare.12543080
     - GOA6 (2015-2020) https://doi.org/10.6084/m9.figshare.14787888
@@ -108,7 +110,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
-- **Make Data Count** (Data Citation Corpus)
+- ### Make Data Count (Data Citation Corpus)
   - source and documentation:
     - https://makedatacount.org/find-a-tool/data-citation-corpus-documentation/ (documentation)
     - https://doi.org/10.5281/zenodo.16901115 (download)
@@ -116,8 +118,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - license: CC0 
   - [JSON schema](./databases/mdc/schema/)
   - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](./databases/mdc/dcc.py)
-a
-- **OpenAIRE**
+
+- ### OpenAIRE
   - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-01-29 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
@@ -134,7 +136,7 @@ a
       - relations (tables indicating the relation between the different entities)
     - the relation tables are provided as subsets of the full relation table, split by type of entities and (for product-product relations) type of relationship. For all reciprocal relationships, only one side is provided. This was done to save on processing as well as downstream computing costs.
 
-- **OpenAPC**
+- ### OpenAPC
   - source and documentation:
     - https://www.openapc.net/ (documentation)
     - https://github.com/OpenAPC/openapc-de/ (documentation)
@@ -143,7 +145,8 @@ a
   - license: CC BY 4.0
   - [JSON schema](./databases/openapc/schema/)
 
-- **OpenCitations Meta** [to be updated to latest version]
+- ### OpenCitations Meta
+  [to be updated to latest version]
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
@@ -153,7 +156,7 @@ a
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
 
-- **OpenEditors**
+- ### OpenEditors
   - source and documentation:
       - https://github.com/andreaspacher/openeditors (documentation)
       - https://doi.org/10.5281/zenodo.19108866 (download)
@@ -161,13 +164,13 @@ a
   - license: CC BY 4.0
   - [JSON schema](./databases/openeditions/schema/)
 
-- **PKP**
+- ### PKP
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
   - license: CC0
   - [JSON schema](./databases/pkp/schema/)
 
-- **ROR**
+- ### ROR
   - source and documentation:
     - https://ror.readme.io/docs/data-dump (documentation)
     - https://doi.org/10.5281/zenodo.6347574 (download)
@@ -175,7 +178,7 @@ a
   - license: CC0 
   - [JSON schema](./databases/ror/schema/)
 
-- **Truthtables**
+- ###Truthtables
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources
   - Data sources:

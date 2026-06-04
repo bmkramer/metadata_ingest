@@ -108,6 +108,15 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
+- **Make Data Count** (Data Citation Corpus)
+  - source and documentation:
+    - https://makedatacount.org/find-a-tool/data-citation-corpus-documentation/ (documentation)
+    - https://doi.org/10.5281/zenodo.16901115 (download)
+  - release date: 2025-08-15 (version 4.1)
+  - license: CC0 
+  - [JSON schema](./databases/mdc/schema/)
+  - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](./databases/mdc/scriptname.py)
+
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-01-29 (provided by OpenAIRE)

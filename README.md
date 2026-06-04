@@ -36,7 +36,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 ## Data sources
 
-#### Butler APCs
+### Butler APCs
   - source and documentation:
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
@@ -47,8 +47,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
-### Crossref
-#### Crossref public data file
+### Crossref public data file
   - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12
   - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
@@ -58,17 +57,17 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - full public data file (167,008,748 records)
       - data file sample (10,000 records)
  
-### Crossref members** (data underlying the Crossref API members endpoint) 
+### Crossref members (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-### Crossref journals** (data underlying the Crossref API journals endpoint)
+### Crossref journals (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-- **DataCite public data file** 
+- ### DataCite public data file 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
   - license: CC0

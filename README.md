@@ -115,7 +115,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - release date: 2025-08-15 (version 4.1)
   - license: CC0 
   - [JSON schema](./databases/mdc/schema/)
-  - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](./databases/mdc/src/dcc.py)
+  - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](./databases/mdc/dcc.py)
 a
 - **OpenAIRE**
   - source and documentation: https://doi.org/10.5281/zenodo.3516917

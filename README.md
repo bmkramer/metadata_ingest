@@ -2,14 +2,21 @@
 
 # Metadata ingest 
 
-Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query.
+Metadata ingest from various open data sources into Google Big Query (GBQ) project [SOS Datasources](https://console.cloud.google.com/bigquery?hl=en&project=sos-datasources) to make them publicly available for analysis and combination with other open datasets available via Google Big Query. 
 
+Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to host the tables in location EU with a miror hosted in location US to maintain existing interoperability across regions.
 
 To use the data for your own analysis, you would need your own [Google Cloud project](https://console.cloud.google.com/projectcreate), to which processing/compute costs would be billed. There's a [free trial period](https://cloud.google.com/free/docs/free-cloud-features) during which you have $300 credit, and there is a [free tier](https://cloud.google.com/bigquery/pricing) of 1 TB processing per month.
 
+Dataset collection maintained by [Bianda Kramer](https://orcid.org/0000-0002-5965-6560) and [Cameron Neylon](https://orcid.org/0000-0002-0068-716X). Part of [ORION-DBs](https://orion-dbs.community/), a  collection of publicly available datasets on Google BigQuery.
+
+<a href="https://orion-dbs.community/" style="text-align: center">
+<img src="./static/images/orion_dbs_cropped.png" title="The constellation of Orion as seen from the southern hemisphere. Image from Mary Orr (1896), 'Southern Stars: A Guide to the Constellations Visible in the Southern Hemisphere', Gall and Inglis, London and Edinburgh. Illustration probably by William Peacock and Co." alt="The constellation of Orion as seen from the southern hemisphere. Image from Mary Orr (1896), 'Southern Stars: A Guide to the Constellations Visible in the Southern Hemisphere', Gall and Inglis, London and Edinburgh. Illustration probably by William Peacock and Co." width="20%" align="center" >
+</a>
+
 ## Workflow
 
-_(this still needs to be wrapped in e.g. a Python script)_ 
+_(this could also be wrapped in e.g. a Python script)_ 
 
 - download datafile(s) to local
 - extract folder(s) where applicable
@@ -21,16 +28,24 @@ _(this still needs to be wrapped in e.g. a Python script)_
 
 For large datasets, this workflow is carried out in batches.
 
-This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), the extracted JSONL files are first read as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.  
-_(NB These steps are resource intensive, and in future probably better done locally)_    
+This workflow assumes data can be imported 'as is'. In cases where data first need to be transformed (i.e. to replace dashes with underscores in variable names), this is preferably done locally, using Python scripts. Alternatively, the extracted JSONL files are can first be ingested as csv (1 string per record) and transformed in Big Query using an SQL script. The transformed table is then exported to a GCS bucket as jsonl (with or without compression) and re-imported from there.     
 
-For each data source, JSON schemas and (where applicable) SQL scripts used for ingest and transformation are available in the folder [databases](./databases).
-
-Currently, the tables in the GBQ dataset SOS Datasources are stored in location US (multiple regions) for interoperability reasons. This may change in future, e.g. to also save a copy on EU servers.
+For each data source, JSON schemas and (where applicable) SQL and/or Python scripts used for transformation are available in the folder [databases](./databases).
 
 Tables are currently not partitioned or clustered - this would be a useful future approach to save on computing costs
 
 ## Data sources
+
+- **Butler APCs**
+  - source and documentation:
+    - https://doi.org/10.7910/DVN/CR1MMV (documentation)
+    - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
+    - journal_level_apcs: https://dataverse.harvard.edu/file.xhtml?fileId=10272829&version=1.0 (download)
+  - release date: 2024-06-12
+  - license: CC0
+  - [JSON schemas](./databases/butler_apcs/schema/) (automatic schema detection from csv)
+  - notes:
+    - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
 - **Crossref public data file**
   - source and documentation: https://www.crossref.org/learning/public-data-file/
@@ -44,26 +59,71 @@ Tables are currently not partitioned or clustered - this would be a useful futur
  
 - **Crossref members** (data underlying the Crossref API members endpoint) 
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
-  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
+  - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **Crossref journals** (data underlying the Crossref API journals endpoint)
   - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
-  - sample date: 2026-01-05 (previous versions 2025-05-31, 2025-12-31)
+  - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - **DataCite public data file** 
   - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
   - release date: 2026-01-06
-  - [JSON schema](./databases/datacite/schema/datacite_public_datafile_202601.json)
+  - license: CC0
+  - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
 
+- **DataCite clients** (data underlying the DataCite API clients endpoint)
+  - source and documentation: https://support.datacite.org/reference/get_clients
+  - sample date: 2026-04-11
+  - license: CC0
+  - [cURL command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+  - [JSON schema](./databases/datacite/schema/datacite_clients_schema.json)
+  - [JSON schema for ingest](./databases/datacite/schema/datacite_clients_ingest_schema.json)
+  - notes:
+    - use pagination to retrieve all records
+    - ingest schema includes variables *link* and *meta* from API response 
+
+- **DOAJ**
+  - source and documentation:
+    - https://doaj.org/docs/public-data-dump/ (documentation)
+    - https://doaj.org/csv (download)
+  - release date: 2026-01-03 (previous version 2025-07-31)
+  - license: CC0
+  - [JSON schema](./databases/doaj/schema/) (automatic schema detection from csv)
+  - notes:
+    - DOAJ also makes data snapshot availabe as JSON file
+
+- **GOA** (Walt Crawford Gold Open Access datasets)
+  - source and documentation:
+    - GOA5 (2014-2019) https://doi.org/10.6084/m9.figshare.12543080
+    - GOA6 (2015-2020) https://doi.org/10.6084/m9.figshare.14787888
+    - GOA7 (2016-2021) https://doi.org/10.6084/m9.figshare.19929179
+    - GOA8 (2017-2022) https://doi.org/10.6084/m9.figshare.23203955
+    - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
+    - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
+  - license: CC BY 4.0
+  - [JSON schema GOA10](./databases/doaj/schema/) (automatic schema detection from csv)
+  - notes:
+    - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
+
+- **Make Data Count** (Data Citation Corpus)
+  - source and documentation:
+    - https://makedatacount.org/find-a-tool/data-citation-corpus-documentation/ (documentation)
+    - https://doi.org/10.5281/zenodo.16901115 (download)
+  - release date: 2025-08-15 (version 4.1)
+  - license: CC0 
+  - [JSON schema](./databases/mdc/schema/)
+  - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](./databases/mdc/scriptname.py)
+
 - **OpenAIRE**
-  - source and documentation: https://doi.org/10.5281/zenodo.17098012
-  - release date: 2025-09-12
+  - source and documentation: https://doi.org/10.5281/zenodo.3516917
+  - release date: 2026-01-29 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
   - [Python script to count and split tables](./databases/openaire//count_and_split.py)
-  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20250912.csv)
+  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20260129.csv)
+  - license: CC BY 4.0
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
       - products (publications, datasets, software, other research products)
@@ -74,17 +134,56 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - relations (tables indicating the relation between the different entities)
     - the relation tables are provided as subsets of the full relation table, split by type of entities and (for product-product relations) type of relationship. For all reciprocal relationships, only one side is provided. This was done to save on processing as well as downstream computing costs.
 
+- **OpenAPC**
+  - source and documentation:
+    - https://www.openapc.net/ (documentation)
+    - https://github.com/OpenAPC/openapc-de/ (documentation)
+    - https://github.com/OpenAPC/openapc-de/blob/master/data/apc_de.csv (download)
+  - release date: 2025-08-01
+  - license: CC BY 4.0
+  - [JSON schema](./databases/openapc/schema/)
+
 - **OpenCitations Meta** [to be updated to latest version]
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
   - release date: 2024-06-20
+  - license: CC0
   - [JSON schema](./databases/opencitations/schema/)
-  - SQL processing scripts [none]
   - notes:
     - the OpenCitations Meta database contains bibliographic metadata for all publications involved in the OpenCitations Index
+
+- **OpenEditors**
+  - source and documentation:
+      - https://github.com/andreaspacher/openeditors (documentation)
+      - https://doi.org/10.5281/zenodo.19108866 (download)
+  - release date: 2026-03-17
+  - license: CC BY 4.0
+  - [JSON schema](./databases/openeditions/schema/)
 
 - **PKP**
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
+  - license: CC0
   - [JSON schema](./databases/pkp/schema/)
+
+- **ROR**
+  - source and documentation:
+    - https://ror.readme.io/docs/data-dump (documentation)
+    - https://doi.org/10.5281/zenodo.6347574 (download)
+  - release date: 2026-01-29
+  - license: CC0 
+  - [JSON schema](./databases/ror/schema/)
+
+- **Truthtables**
+  - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
+  - Created to facilitate comparison of metadata coverage across sources
+  - Data sources:
+      - Crossref (data snapshot 20260131)
+      - OpenAlex (data snapshot 20260202)
+      - OpenAIRE (data snapshot 20250912)
+      - DataCite (to be added)
+  - license: CC0
+  - [SQL processing scripts](./databases/truthtables/sql)
+  - notes:
+    - metadata elements: abstract, authors (string and PIDs), affiliations (string and PIDs), references, citations, fields/subjects, venue and funders

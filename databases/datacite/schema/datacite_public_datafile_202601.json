@@ -3,14 +3,12 @@
 "name": "id",				
 "type": "STRING",				
 "mode": "NULLABLE"				
-},				
-				
+},							
 {				
 "name": "type",				
 "type": "STRING",				
 "mode": "NULLABLE"				
 },				
-				
 {				
 "name": "attributes",				
 "type": "RECORD",				
@@ -54,8 +52,7 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "container",			
 	"type": "RECORD",			
@@ -112,14 +109,12 @@
 "mode": "NULLABLE"
 }		
 	]			
-	},			
-				
+	},						
 	{			
 	"name": "contentUrl",			
 	"type": "STRING",			
 	"mode": "REPEATED"			
-	},			
-				
+	},						
 	{			
 	"name": "contributors",			
 	"type": "RECORD",			
@@ -205,14 +200,12 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "created",			
 	"type": "TIMESTAMP",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "creators",			
 	"type": "RECORD",			
@@ -293,8 +286,7 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},						
 	{			
 	"name": "dates",			
 	"type": "RECORD",			
@@ -565,8 +557,7 @@
 	"name": "registered",			
 	"type": "TIMESTAMP",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "relatedIdentifiers",			
 	"type": "RECORD",			
@@ -623,8 +614,7 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "relatedItems",			
 	"type": "RECORD",			
@@ -882,8 +872,7 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},						
 	{			
 	"name": "rightsList",			
 	"type": "RECORD",			
@@ -920,32 +909,27 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},						
 	{			
 	"name": "schemaVersion",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "sizes",			
 	"type": "STRING",			
 	"mode": "REPEATED"			
-	},			
-				
+	},							
 	{			
 	"name": "source",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "state",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "subjects",			
 	"type": "RECORD",			
@@ -982,14 +966,12 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "suffix",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "titles",			
 	"type": "RECORD",			
@@ -1011,8 +993,7 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "types",			
 	"type": "RECORD",			
@@ -1049,44 +1030,37 @@
 		"mode": "NULLABLE"		
 		}		
 	]			
-	},			
-				
+	},							
 	{			
 	"name": "updated",			
 	"type": "TIMESTAMP",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "url",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},						
 	{			
 	"name": "version",			
 	"type": "STRING",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},					
 	{			
 	"name": "versionCount",			
 	"type": "INTEGER",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "versionOfCount",			
 	"type": "INTEGER",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},							
 	{			
 	"name": "viewCount",			
 	"type": "INTEGER",			
 	"mode": "NULLABLE"			
-	},			
-				
+	},						
 	{			
 	"name": "viewsOverTime",			
 	"type": "RECORD",			
@@ -1104,10 +1078,8 @@
 		}		
 	]			
 	}			
-				
 ]				
 },				
-				
 {				
 "name": "relationships",				
 "type": "RECORD",				

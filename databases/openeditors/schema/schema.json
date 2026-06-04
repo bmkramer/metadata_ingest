@@ -1,0 +1,93 @@
+[
+  {
+    "name": "editor_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "internal identifier",
+    "fields": []
+  },
+  {
+    "name": "editor",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "name of the editor or editorial board member",
+    "fields": []
+  },
+  {
+    "name": "affiliation_ror:",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "standardized affiliation name based on a matching against the ROR API",
+    "fields": []
+  },
+  {
+    "name": "affiliation",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "raw affiliation string found on the journal website",
+    "fields": []
+  },
+  {
+    "name": "ror",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "ROR identifier based on the ROR API matching",
+    "fields": []
+  },
+  {
+    "name": "role",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "role of the editorial board member (such as Editor-in-Chief, Associate Editor, etc.)",
+    "fields": []
+  },
+  {
+    "name": "country",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "country of the affiliation",
+    "fields": []
+  },
+  {
+    "name": "raw_text",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "raw HTML string scrapedr",
+    "fields": []
+  },
+  {
+    "name": "first_seen_at",
+    "mode": "NULLABLE",
+    "type": "DATE",
+    "description": "date of scraping",
+    "fields": []
+  },
+  {
+    "name": "journal",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "name of the journal",
+    "fields": []
+  },
+  {
+    "name": "url",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "URL of the journal",
+    "fields": []
+  },
+  {
+    "name": "publisher",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "name of the publisher",
+    "fields": []
+  },
+  {
+    "name": "predatory",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "binary code denoting whether the publisher is known as questionable (coded as 1) or not (coded as 0)",
+    "fields": []
+  }
+]

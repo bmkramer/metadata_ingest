@@ -1,0 +1,215 @@
+[
+  {
+    "name": "admin",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+        "name": "created",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "date",
+            "type": "DATE",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "schema_version",
+            "type": "FLOAT",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "last_modified",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "date",
+            "type": "DATE",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "schema_version",
+            "type": "FLOAT",
+            "mode": "NULLABLE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "domains",
+    "type": "STRING",
+    "mode": "REPEATED"
+  },
+  {
+    "name": "established",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "external_ids",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "all",
+        "type": "STRING",
+        "mode": "REPEATED"
+      },
+      {
+        "name": "preferred",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "id",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "links",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "value",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "locations",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "geonames_details",
+        "type": "RECORD",
+        "mode": "NULLABLE",
+        "fields": [
+          {
+            "name": "continent_code",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "continent_name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "country_code",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "country_name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "country_subdivision_code",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "country_subdivision_name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "lat",
+            "type": "FLOAT",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "lng",
+            "type": "FLOAT",
+            "mode": "NULLABLE"
+          },
+          {
+            "name": "name",
+            "type": "STRING",
+            "mode": "NULLABLE"
+          }
+        ]
+      },
+      {
+        "name": "geonames_id",
+        "type": "INTEGER",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "names",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "lang",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "types",
+        "type": "STRING",
+        "mode": "REPEATED"
+      },
+      {
+        "name": "value",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "relationships",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "fields": [
+      {
+        "name": "id",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "label",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
+      {
+        "name": "type",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      }
+    ]
+  },
+  {
+    "name": "status",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "types",
+    "type": "STRING",
+    "mode": "REPEATED"
+  }
+]

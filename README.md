@@ -53,9 +53,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
   - [SQL processing scripts](./databases/crossref/sql/)
   - notes:
-    - the dataset in Google Big Query currently contains 2 tables:
-      - full public data file (167,008,748 records)
-      - data file sample (10,000 records)
+    - the dataset in Google Big Query currently contains only the data file sample (10,000 records) as proof of concept
+    - the full monthly Crossref datafile is made available in GBQ by SUB Göttingen: https://orion-dbs.community/collections/subugoe
  
 - ### Crossref members
   (data underlying the Crossref API members endpoint) 

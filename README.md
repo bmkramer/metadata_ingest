@@ -160,6 +160,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### OpenEditors
   - source and documentation:
+      - https://openeditors.ooir.org/ (documentation)
       - https://github.com/andreaspacher/openeditors (documentation)
       - https://doi.org/10.5281/zenodo.19108866 (download)
   - release date: 2026-03-17

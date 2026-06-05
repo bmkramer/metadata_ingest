@@ -69,12 +69,13 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - sample date: 2025-12-31 (previous versions 2025-05-31)
   - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-- ### DataCite public data file 
-  - source and documentation: https://datafiles.datacite.org/datafiles/public-2025
-  - release date: 2026-01-06
+- ### DataCite monthly data file 
+  - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
+  - release date: 2026-04-30
   - license: CC0
   - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
+  - note: data provided by SUB Göttingen as DataCite member
 
 - ### DataCite clients
   (data underlying the DataCite API clients endpoint)

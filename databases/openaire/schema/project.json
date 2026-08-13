@@ -157,5 +157,99 @@
     "name": "websiteUrl",
     "type": "STRING",
     "mode": "NULLABLE"
+  },
+  {
+  "name": "indicators",
+  "description": "Indicators computed for this result, for example UsageCount ones",
+  "type": "RECORD",
+  "mode": "NULLABLE",
+  "fields": [
+    {
+    "name": "citationImpact",
+    "description": "The impact measures (i.e. popularity)",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+      {
+      "name": "citationClass",
+      "mode": "NULLABLE",
+      "type": "STRING"
+      },
+      {
+      "name": "citationCount",
+      "mode": "NULLABLE",
+      "type": "FLOAT"
+      },
+      {
+      "name": "impulse",
+      "mode": "NULLABLE",
+      "type": "FLOAT"
+      },
+      {
+      "name": "impulseClass",
+      "mode": "NULLABLE",
+      "type": "STRING"
+      },
+      {
+      "name": "influence",
+      "mode": "NULLABLE",
+      "type": "FLOAT"
+      },
+      {
+      "name": "influenceClass",
+      "mode": "NULLABLE",
+      "type": "STRING"
+      },
+      {
+      "name": "popularity",
+      "mode": "NULLABLE",
+      "type": "FLOAT"
+      },
+      {
+      "name": "popularityClass",
+      "mode": "NULLABLE",
+      "type": "STRING"
+      }
+    ]
+  },
+  {
+  "name": "usageCounts",
+  "description": "The usage counts (i.e. downloads)",
+  "type": "RECORD",
+  "mode": "NULLABLE",
+    "fields": [
+    {
+    "name": "downloads",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+    },
+    {
+    "name": "views",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+    }
+  ]
   }
+]
+},
+{
+"name": "pids",
+"description": "Persistent identifiers of the result",
+"type": "RECORD",
+"mode": "REPEATED",
+"fields": [
+  {
+  "name": "scheme",
+  "description": "The scheme of the persistent identifier for the result.",
+  "type": "STRING",
+  "mode": "NULLABLE"
+  },
+  {
+  "name": "value",
+  "description": "The value expressed in the scheme (i.e. 10.1000/182)",
+  "type": "STRING",
+  "mode": "NULLABLE"
+  }
+]
+}
 ]

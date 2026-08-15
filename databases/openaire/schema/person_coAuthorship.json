@@ -1,0 +1,20 @@
+[
+  {
+  "name": "author1",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "author2",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "coauthoredProducts",
+  "type": "INTEGER",
+  "mode": "NULLABLE",
+  "description": ""
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+  "name": "organization",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "period",
+  "type": "RECORD",
+  "mode": "REPEATED",
+  "description": "",
+  "fields": [
+    {
+    "name": "endDate",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+    {
+    "name": "startDate",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    }
+  ]
+  },
+  {
+  "name": "person",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  }
+]
+

@@ -6,7 +6,7 @@
   "description": ""
   },
   {
-  "name": ""declaredAffiliations",
+  "name": "declaredAffiliations",
   "type": "RECORD",
   "mode": "REPEATED",
   "description": "",

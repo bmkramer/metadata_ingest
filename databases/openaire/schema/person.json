@@ -1,0 +1,90 @@
+[
+  {
+  "name": "alternativeNames",
+  "type": "STRING",
+  "mode": "REPEATED",
+  "description": ""
+  },
+  {
+  "name": "biography",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "consent",
+  "type": "BOOLEAN",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "familyName",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "givenName",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "id",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "pids",
+  "type": "RECORD",
+  "mode": "REPEATED",
+  "description": "",
+  "fields": [
+    {
+    "name": "scheme",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+    {
+    "name": "value",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+  ]
+  },
+  {
+  "name": "subject",
+  "type": "RECORD",
+  "mode": "REPEATED",
+  "description": "",
+  "fields": [
+    {
+    "name": "fromYear",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+    {
+    "name": "schema",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+    {
+    "name": "toYear",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    },
+    {
+    "name": "value",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    }
+  ]
+  }
+]

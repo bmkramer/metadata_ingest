@@ -3,7 +3,7 @@
   "name": "affiliation",
   "type": "RECORD",
   "mode": "NULLABLE",
-  "description": ""
+  "description": "",
   "fields": [
     {
     "name": "pid",

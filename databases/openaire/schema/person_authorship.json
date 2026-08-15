@@ -84,7 +84,7 @@
   {
   "name": "roles",
   "type": "JSON",
-  "mode": "REPEATED",
-  "description": "controlled vocabulary: CRediT roles [note BK]. Imported as JSON not STRING as field missing in many records"
+  "mode": "NULLABLE",
+  "description": "controlled vocabulary: CRediT roles [note BK]. Imported as JSON (nullable) not STRING (repeated) as field missing in many records"
   }
 ]

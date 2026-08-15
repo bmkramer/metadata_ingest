@@ -1,0 +1,40 @@
+[
+  {
+  "name": "affiliation",
+  "type": "RECORD",
+  "mode": "NULLABLE",
+  "description": ""
+  "fields": [
+    {
+    "name": "pid",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": "controlled vocabulary: ror, isni, wikiData, RingGold, fundRef [note BK]"
+    },
+    {
+    "name": "value",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    }
+  ]
+  },
+  {
+  "name": "person",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "project",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "roleInProject",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": "controlled vocabulary [note BK]"
+  }
+]

@@ -83,8 +83,8 @@
   },
   {
   "name": "roles",
-  "type": "STRING",
+  "type": "JSON",
   "mode": "REPEATED",
-  "description": "controlled vocabulary: CRediT roles [note BK]"
+  "description": "controlled vocabulary: CRediT roles [note BK]. Imported as JSON not STRING as field missing in many records"
   }
 ]

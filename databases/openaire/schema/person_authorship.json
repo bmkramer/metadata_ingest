@@ -15,7 +15,7 @@
     "name": "matchingOrganizations",
     "type": "RECORD",
     "mode": "REPEATED",
-    "description": ""
+    "description": "",
     "fields": [
       {
       "name": "affiliationString",

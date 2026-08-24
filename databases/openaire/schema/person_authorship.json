@@ -1,0 +1,90 @@
+[
+  {
+  "name": "corresponding",
+  "type": "BOOLEAN",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "declaredAffiliations",
+  "type": "RECORD",
+  "mode": "REPEATED",
+  "description": "",
+  "fields": [
+    {
+    "name": "matchingOrganizations",
+    "type": "RECORD",
+    "mode": "REPEATED",
+    "description": "",
+    "fields": [
+      {
+      "name": "affiliationString",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": ""
+      },
+      {
+      "name": "countries",
+      "type": "STRING",
+      "mode": "REPEATED",
+      "description": ""
+      },
+      {
+      "name": "openOrgs",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": ""
+      },
+      {
+      "name": "provenance",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": ""
+      },
+      {
+      "name": "ror",
+      "type": "STRING",
+      "mode": "NULLABLE",
+      "description": ""
+      },
+      {
+      "name": "trust",
+      "type": "FLOAT",
+      "mode": "NULLABLE",
+      "description": ""
+      }
+    ]
+    },
+    {
+    "name": "rawAffiliation",
+    "type": "STRING",
+    "mode": "NULLABLE",
+    "description": ""
+    }
+  ]
+  },
+  {
+  "name": "person",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "product",
+  "type": "STRING",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "rank",
+  "type": "INTEGER",
+  "mode": "NULLABLE",
+  "description": ""
+  },
+  {
+  "name": "roles",
+  "type": "JSON",
+  "mode": "NULLABLE",
+  "description": "controlled vocabulary: CRediT roles [note BK]. Imported as JSON (nullable) not STRING (repeated) as field missing in many records"
+  }
+]

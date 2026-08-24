@@ -647,6 +647,11 @@
     "mode": "REPEATED",
     "type": "RECORD",
     "fields": [
+       {
+        "name": "blank",
+        "type": "STRING",
+        "mode": "NULLABLE"
+      },
       {
         "name": "box",
         "type": "STRING",

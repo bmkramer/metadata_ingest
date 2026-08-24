@@ -70,8 +70,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### DataCite monthly data file 
   - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
-  - release date: 2026-04-30
-  - license: CC0
+  - release date: 2026-08-01
+  - license: CC0U
   - [JSON schema](./databases/datacite/schema/)
   - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
   - note: data provided by SUB Göttingen as DataCite member

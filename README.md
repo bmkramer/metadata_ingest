@@ -125,7 +125,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-06-08 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
-  - [overview of relation tables (csv)](./databases/openaire/relation_tables_20260608.csv)
+  - [overview of relation tables with record counts (csv)](./databases/openaire/relation_tables_20260608.csv)
   - license: CC BY 4.0
   - notes:
     - the dataset in Google Big Query contains separate tables for the different entities in the OpenAIRE graph:
@@ -135,7 +135,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - projects
       - communities
       - relations (tables indicating the relation between the different entities)
-    - the relation tables are provided as subsets of the full relation table, split by type of entities and (for product-product relations) type of relationship. For all reciprocal relationships, only one side is provided. This was done to save on processing as well as downstream computing costs.
+    - relation tables provided by OpenAIRE are split by type of source entity and relationship type; relations are provided in one direction only
+    - some relationship tables have a different record count then reported by OpenAIRE (this is under investigation)
 
 - ### OpenAPC
   - source and documentation:

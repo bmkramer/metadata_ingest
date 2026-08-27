@@ -1,6 +1,7 @@
 from typing import Union
 from pathlib import Path
 import json
+import os
 import jsonlines
 
 
@@ -19,4 +20,8 @@ def json_array_to_jsonl(infilepath: Union[str, Path],
             writer.write_all([line for line in j])
 
 if __name__ == '__main__':
-    folder_location = Path('../../../datacite/')
+    folder_location = Path('../../../datacite/datacitationcorpus')
+    out_location = Path('../../../datacite/datacitationcorpus/out/')
+    os.makedirs(out_location, exist_ok=True)
+    for file in folder_location.glob('*.json'):
+        json_array_to_jsonl(file, (out_location / file.stem).with_suffix('.jsonl'))

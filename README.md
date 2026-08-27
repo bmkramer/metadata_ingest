@@ -47,6 +47,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
+- ### COMET - 
+
 - ### Crossref public data file
   - source and documentation: https://www.crossref.org/learning/public-data-file/
   - release date: 2025-03-12

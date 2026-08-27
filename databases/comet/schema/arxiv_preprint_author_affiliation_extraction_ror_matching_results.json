@@ -1,0 +1,60 @@
+[
+  {
+    "name": "prediction",
+    "mode": "REPEATED",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "affiliations",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "ror_id",
+            "mode": "NULLABLE",
+            "type": "STRING",
+            "description": "",
+            "fields": []
+          },
+          {
+            "name": "affiliation",
+            "mode": "NULLABLE",
+            "type": "STRING",
+            "description": "",
+            "fields": []
+          }
+        ]
+      },
+      {
+        "name": "name",
+        "mode": "NULLABLE",
+        "type": "STRING",
+        "description": "",
+        "fields": []
+      }
+    ]
+  },
+  {
+    "name": "version",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "doi",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "arxiv_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  }
+]

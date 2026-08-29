@@ -59,13 +59,13 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - CLI command (to retrieve data): ```hf download cometadata/arxiv-preprint-matching-results --repo-type dataset --local-dir ./Downloads/hf```
       - [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20250615.json) (2025-06-15) / [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20251012.json) (2025-10-12)
      - ##### COMET arXiv funding entity extractions
-      - source and documentation:
-        - https://doi.org/10.82461/gc3p-n671 (documentation)
-        - https://huggingface.co/datasets/cometadata/arxiv-funding-entity-extractions (download)
-      - release date: 2026-05-02
-      - CLI command (to retrieve data): ```hf download cometadata/arxiv-funding-entity-extractions --repo-type dataset --local-dir ./Downloads/hf```
-      - [JSON schema](./databases/comet/schema/results/arxiv_funding_entity_extractions_predictions_with_ror.json)
-      - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
+       - source and documentation:
+         - https://doi.org/10.82461/gc3p-n671 (documentation)
+         - https://huggingface.co/datasets/cometadata/arxiv-funding-entity-extractions (download)
+       - release date: 2026-05-02
+       - CLI command (to retrieve data): ```hf download cometadata/arxiv-funding-entity-extractions --repo-type dataset --local-dir ./Downloads/hf```
+       - [JSON schema](./databases/comet/schema/results/arxiv_funding_entity_extractions_predictions_with_ror.json)
+       - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
     - ##### COMET Match preprints to published articles
       - source and documentation
       - release date:

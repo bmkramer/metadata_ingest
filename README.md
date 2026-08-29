@@ -168,6 +168,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA8 (2017-2022) https://doi.org/10.6084/m9.figshare.23203955
     - GOA9 (2019-2023) https://doi.org/10.6084/m9.figshare.25892869  
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
+    - GOA11 (2021-2025) https://doi.org/10.6084/m9.figshare.32427915 [ingest in progress]
   - license: CC BY 4.0
   - [JSON schema GOA10](./databases/doaj/schema/) (automatic schema detection from csv)
   - notes:

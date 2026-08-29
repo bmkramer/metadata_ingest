@@ -1,0 +1,102 @@
+[	
+{	
+"name": "doi",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "contributors",	
+"mode": "REPEATED",	
+"type": "RECORD",	
+"description": "",	
+"fields": [	
+	{
+	"name": "name",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "nameType",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "contributorType",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	}
+]	
+},	
+{	
+"name": "resources",	
+"mode": "REPEATED",	
+"type": "RECORD",	
+"description": "",	
+"fields": [	
+	{
+	"name": "relatedIdentifier",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "relatedIdentifierType",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "relationType",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "resourceTypeGeneral",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	}
+]	
+},	
+{	
+"name": "action",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "field",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "originalValue",	
+"mode": "NULLABLE",	
+"type": "JSON",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "enrichedValue",	
+"mode": "NULLABLE",	
+"type": "JSON",	
+"description": "",	
+"fields": []	
+}	
+]	

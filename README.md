@@ -83,7 +83,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
          - https://doi.org/10.82461/gc3p-n671 (documentation)
          - https://huggingface.co/datasets/cometadata/arxiv-funding-entity-extractions (download)
        - release date: 2026-05-02
-       - license: CC0
        - CLI command (to retrieve data): ```hf download cometadata/arxiv-funding-entity-extractions --repo-type dataset --local-dir ./Downloads/hf```
        - [JSON schema](./databases/comet/schema/results/arxiv_funding_entity_extractions_predictions_with_ror.json)
        - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
@@ -93,7 +92,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
         - https://doi.org/10.82461/bpzr-jd55 (documentation)
         - https://huggingface.co/datasets/cometadata/datacite-rtg-text-other-reclassification (download)
       - release date: 2025-08-26
-      - license: CC0
       - CLI command (to retrieve data): ```hf download cometadata/datacite-rtg-text-other-reclassification --repo-type dataset --local-dir ./Downloads/hf```
       - [JSON schema](./databases/comet/schema/results/datacite_rtg_text_other_reclassification.json)
 

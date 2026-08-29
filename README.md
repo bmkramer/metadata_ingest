@@ -79,21 +79,10 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - ##### COMET DataCite resource type classification
       - source and documentation:
       - https://doi.org/10.82461/bpzr-jd55 (documentation)
-      - release date: 2025-08-25
+      - https://huggingface.co/datasets/cometadata/datacite-rtg-text-other-reclassification (download)
+      - release date: 2025-08-26
       - CLI command (to retrieve data): ```hf download cometadata/datacite-rtg-text-other-reclassification --repo-type dataset --local-dir ./Downloads/hf```
       - [JSON schema](./databases/comet/schema/results/datacite_rtg_text_other_reclassification.json)
-  
-    - ##### COMET Match preprints to published articles
-      - source and documentation
-      - release date:
-      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
-      - [JSON schema]()
-    - ##### COMET Match preprints to published articles
-      - source and documentation
-      - release date:
-      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
-      - [JSON schema]()
-  - #### COMET metadata enrichments 
 
 - ### Crossref
 

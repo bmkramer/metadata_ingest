@@ -89,14 +89,14 @@
 "name": "originalValue",	
 "mode": "NULLABLE",	
 "type": "JSON",	
-"description": "Imported as JSON; to be handles in post-processing",	
+"description": "Imported as JSON; to be handled in post-processing",	
 "fields": []	
 },	
 {	
 "name": "enrichedValue",	
 "mode": "NULLABLE",	
 "type": "JSON",	
-"description": "Imported as JSON; to be handles in post-processing",	
+"description": "Imported as JSON; to be handled in post-processing",	
 "fields": []	
 }	
 ]	

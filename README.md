@@ -50,6 +50,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - ### COMET
 
   - #### COMET project results
+
     - ##### COMET arXiv preprint matching
        - source and documentation:
          - https://doi.org/10.5281/zenodo.20811849 (documentation)
@@ -58,6 +59,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - release date: 2025-06-15 / 2025-10-12
       - CLI command (to retrieve data): ```hf download cometadata/arxiv-preprint-matching-results --repo-type dataset --local-dir ./Downloads/hf```
       - [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20250615.json) (2025-06-15) / [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20251012.json) (2025-10-12)
+
+    - ##### COMET Improve Affiliations Parsing of Preprints
+      - source and documentation:
+      - https://doi.org/10.82461/160e-8q92 (documentation)
+      - release date:
+      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+      - [JSON schema]()
+
      - ##### COMET arXiv funding entity extractions
        - source and documentation:
          - https://doi.org/10.82461/gc3p-n671 (documentation)
@@ -66,11 +75,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
        - CLI command (to retrieve data): ```hf download cometadata/arxiv-funding-entity-extractions --repo-type dataset --local-dir ./Downloads/hf```
        - [JSON schema](./databases/comet/schema/results/arxiv_funding_entity_extractions_predictions_with_ror.json)
        - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
+       
     - ##### COMET Match preprints to published articles
-      - source and documentation
+      - source and documentation:
+      - https://doi.org/10.82461/160e-8q92 (documentation)
       - release date:
       - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
       - [JSON schema]()
+      
     - ##### COMET Match preprints to published articles
       - source and documentation
       - release date:

@@ -50,6 +50,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - ### COMET
 
   - #### COMET project results
+    - ##### COMET arXiv preprint matching
+       - source and documentation:
+         - https://doi.org/10.5281/zenodo.20811849 (documentation)
+         - https://doi.org/10.5281/zenodo.15882986 (download)
+         - https://huggingface.co/datasets/cometadata/arxiv-preprint-matching-results (download)
+      - release date: 2025-06-15 / 2025-10-12
+      - CLI command (to retrieve data): ```hf download cometadata/arxiv-preprint-matching-results --repo-type dataset --local-dir ./Downloads/hf```
+      - [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20250615.json) (2025-06-15) / [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20251012.json) (2025-10-12)
     - ##### COMET Match preprints to published articles
       - source and documentation
       - release date:

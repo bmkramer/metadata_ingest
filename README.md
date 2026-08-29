@@ -170,7 +170,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - GOA10 (2020-2024) https://doi.org/10.6084/m9.figshare.29146061
     - GOA11 (2021-2025) https://doi.org/10.6084/m9.figshare.32427915 [ingest in progress]
   - license: CC BY 4.0
-  - [JSON schema GOA10](./databases/goa/schema/goa10.json) (automatic schema detection from csv)
+  - [JSON schema GOA10](./databases/goa/schema/goa10.json), [JSON schema GOA11](./databases/goa/schema/goa11.json) 
   - notes:
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 

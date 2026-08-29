@@ -76,13 +76,13 @@ Tables are currently not partitioned or clustered - this would be a useful futur
        - [JSON schema](./databases/comet/schema/results/arxiv_funding_entity_extractions_predictions_with_ror.json)
        - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
        
-    - ##### COMET Match preprints to published articles
+    - ##### COMET DataCite resource type classification
       - source and documentation:
-      - https://doi.org/10.82461/160e-8q92 (documentation)
-      - release date:
-      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
-      - [JSON schema]()
-      
+      - https://doi.org/10.82461/bpzr-jd55 (documentation)
+      - release date: 2025-08-25
+      - CLI command (to retrieve data): ```hf download cometadata/datacite-rtg-text-other-reclassification --repo-type dataset --local-dir ./Downloads/hf```
+      - [JSON schema](./databases/comet/schema/results/datacite_rtg_text_other_reclassification.json)
+  
     - ##### COMET Match preprints to published articles
       - source and documentation
       - release date:

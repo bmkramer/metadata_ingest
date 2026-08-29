@@ -50,6 +50,26 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 - ### COMET
 
   - #### COMET project results
+    - ##### COMET Match preprints to published articles
+      - source and documentation
+      - release date:
+      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+      - [JSON schema]()
+    - ##### COMET Match preprints to published articles
+      - source and documentation
+      - release date:
+      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+      - [JSON schema]()
+    - ##### COMET Match preprints to published articles
+      - source and documentation
+      - release date:
+      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+      - [JSON schema]()
+    - ##### COMET Match preprints to published articles
+      - source and documentation
+      - release date:
+      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+      - [JSON schema]()
   - #### COMET metadata enrichments 
 
 - ### Crossref

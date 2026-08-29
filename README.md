@@ -36,6 +36,15 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 ## Data sources
 
+- ### arXiv
+  -  source and documentation: https://www.kaggle.com/datasets/Cornell-University/arxiv/data
+  -  release date: 2026-08-22 (v300)
+  -  license: CC0
+  - [JSON schemas](./databases/arxiv/schema/arxiv-metadata-oai-snapshot.json)
+  - notes:
+    - metadata file made available on Kaggle using https://github.com/mattbierbaum/arxiv-public-datasets
+    - variable 'authors_parsed' ingested as JSON
+
 - ### Butler APCs
   - source and documentation:
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)

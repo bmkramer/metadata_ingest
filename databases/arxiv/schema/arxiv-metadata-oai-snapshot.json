@@ -1,0 +1,115 @@
+[	
+{	
+"name": "id",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "submitter",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "authors",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "title",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "comments",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "doi",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "journal-ref",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "report-no",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "categories",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "license",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "abstract",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "",	
+"fields": []	
+},	
+{	
+"name": "versions",	
+"mode": "REPEATED",	
+"type": "RECORD",	
+"description": "",	
+"fields": [	
+	{
+	"name": "version",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "",
+	"fields": []
+	},
+	{
+	"name": "created",
+	"mode": "NULLABLE",
+	"type": "STRING",
+	"description": "provided as string",
+	"fields": []
+	}
+]	
+},	
+{	
+"name": "update_date",	
+"mode": "NULLABLE",	
+"type": "STRING",	
+"description": "provided as string",	
+"fields": []	
+},	
+{	
+"name": "authors_parsed",	
+"mode": "NULLABLE",	
+"type": "JSON",	
+"description": "Imported as JSON; to be handled in post-processing",	
+"fields": []	
+}	
+]	

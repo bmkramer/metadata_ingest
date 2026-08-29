@@ -1,0 +1,402 @@
+[
+  {
+    "name": "arxiv_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "shard_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "doc_id",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "input_file",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "row_idx",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "predicted_statements",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "STRING",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "predicted_details",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "RECORD",
+            "description": "",
+            "fields": [
+              {
+                "name": "statement",
+                "mode": "NULLABLE",
+                "type": "STRING",
+                "description": "",
+                "fields": []
+              },
+              {
+                "name": "score",
+                "mode": "NULLABLE",
+                "type": "FLOAT",
+                "description": "",
+                "fields": []
+              },
+              {
+                "name": "query",
+                "mode": "NULLABLE",
+                "type": "STRING",
+                "description": "",
+                "fields": []
+              },
+              {
+                "name": "paragraph_idx",
+                "mode": "NULLABLE",
+                "type": "INTEGER",
+                "description": "",
+                "fields": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "text_length",
+    "mode": "NULLABLE",
+    "type": "INTEGER",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "latency_ms",
+    "mode": "NULLABLE",
+    "type": "FLOAT",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "error",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "",
+    "fields": []
+  },
+  {
+    "name": "extracted_funders",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "RECORD",
+            "description": "",
+            "fields": [
+              {
+                "name": "list",
+                "mode": "REPEATED",
+                "type": "RECORD",
+                "description": "",
+                "fields": [
+                  {
+                    "name": "element",
+                    "mode": "NULLABLE",
+                    "type": "RECORD",
+                    "description": "",
+                    "fields": [
+                      {
+                        "name": "funder_name",
+                        "mode": "NULLABLE",
+                        "type": "STRING",
+                        "description": "",
+                        "fields": []
+                      },
+                      {
+                        "name": "awards",
+                        "mode": "NULLABLE",
+                        "type": "RECORD",
+                        "description": "",
+                        "fields": [
+                          {
+                            "name": "list",
+                            "mode": "REPEATED",
+                            "type": "RECORD",
+                            "description": "",
+                            "fields": [
+                              {
+                                "name": "element",
+                                "mode": "NULLABLE",
+                                "type": "RECORD",
+                                "description": "",
+                                "fields": [
+                                  {
+                                    "name": "award_ids",
+                                    "mode": "NULLABLE",
+                                    "type": "RECORD",
+                                    "description": "",
+                                    "fields": [
+                                      {
+                                        "name": "list",
+                                        "mode": "REPEATED",
+                                        "type": "RECORD",
+                                        "description": "",
+                                        "fields": [
+                                          {
+                                            "name": "element",
+                                            "mode": "NULLABLE",
+                                            "type": "STRING",
+                                            "description": "",
+                                            "fields": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "funding_scheme",
+                                    "mode": "NULLABLE",
+                                    "type": "RECORD",
+                                    "description": "",
+                                    "fields": [
+                                      {
+                                        "name": "list",
+                                        "mode": "REPEATED",
+                                        "type": "RECORD",
+                                        "description": "",
+                                        "fields": [
+                                          {
+                                            "name": "element",
+                                            "mode": "NULLABLE",
+                                            "type": "STRING",
+                                            "description": "",
+                                            "fields": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "award_title",
+                                    "mode": "NULLABLE",
+                                    "type": "RECORD",
+                                    "description": "",
+                                    "fields": [
+                                      {
+                                        "name": "list",
+                                        "mode": "REPEATED",
+                                        "type": "RECORD",
+                                        "description": "",
+                                        "fields": [
+                                          {
+                                            "name": "element",
+                                            "mode": "NULLABLE",
+                                            "type": "STRING",
+                                            "description": "",
+                                            "fields": []
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "name": "ror_id",
+                        "mode": "NULLABLE",
+                        "type": "STRING",
+                        "description": "",
+                        "fields": []
+                      },
+                      {
+                        "name": "match_confidence",
+                        "mode": "NULLABLE",
+                        "type": "FLOAT",
+                        "description": "",
+                        "fields": []
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extraction_raw",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "STRING",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extraction_error",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "STRING",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extraction_latency_ms",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "FLOAT",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extraction_prompt_tokens",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "INTEGER",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "extraction_completion_tokens",
+    "mode": "NULLABLE",
+    "type": "RECORD",
+    "description": "",
+    "fields": [
+      {
+        "name": "list",
+        "mode": "REPEATED",
+        "type": "RECORD",
+        "description": "",
+        "fields": [
+          {
+            "name": "element",
+            "mode": "NULLABLE",
+            "type": "INTEGER",
+            "description": "",
+            "fields": []
+          }
+        ]
+      }
+    ]
+  }
+]

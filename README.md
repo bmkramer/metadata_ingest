@@ -49,46 +49,49 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### COMET - 
 
-- ### Crossref public data file
-  - source and documentation: https://www.crossref.org/learning/public-data-file/
-  - release date: 2025-03-12
-  - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
-  - [SQL processing scripts](./databases/crossref/sql/)
-  - notes:
-    - the dataset in Google Big Query currently contains only the data file sample (10,000 records) as proof of concept
-    - the full monthly Crossref datafile is made available in GBQ by SUB Göttingen: https://orion-dbs.community/collections/subugoe
+- ### Crossref
+
+  - #### Crossref public data file
+    - source and documentation: https://www.crossref.org/learning/public-data-file/
+    - release date: 2025-03-12
+    - [JSON schema](./databases/crossref/schema/crossref_public_datafile_202503.json) modified from Curtin Open Knowledge Institute (COKI) [Academic Observatory Workflows](https://github.com/The-Academic-Observatory/academic-observatory-workflows/tree/main/academic-observatory-workflows/academic_observatory_workflows/crossref_metadata_telescope/schema)
+    - [SQL processing scripts](./databases/crossref/sql/)
+    - notes:
+      - the dataset in Google Big Query currently contains only the data file sample (10,000 records) as proof of concept
+      - the full monthly Crossref datafile is made available in GBQ by SUB Göttingen: https://orion-dbs.community/collections/subugoe
  
-- ### Crossref members
-  (data underlying the Crossref API members endpoint) 
-  - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
-  - sample date: 2025-12-31 (previous versions 2025-05-31)
-  - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
+  - #### Crossref members
+    (data underlying the Crossref API members endpoint) 
+    - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Members
+    - sample date: 2025-12-31 (previous versions 2025-05-31)
+    - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-- ### Crossref journals
-  (data underlying the Crossref API journals endpoint)
-  - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
-  - sample date: 2025-12-31 (previous versions 2025-05-31)
-  - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
+  - #### Crossref journals
+    (data underlying the Crossref API journals endpoint)
+    - source and documentation: https://api.crossref.org/swagger-ui/index.html#/Journals
+    - sample date: 2025-12-31 (previous versions 2025-05-31)
+    - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
-- ### DataCite monthly data file 
-  - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
-  - release date: 2026-08-01
-  - license: CC0
-  - [JSON schema](./databases/datacite/schema/)
-  - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
-  - note: data provided by SUB Göttingen as DataCite member
+- ### DataCite
+  - #### DataCite monthly data file 
+    - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
+    - release date: 2026-08-01
+    - license: CC0
+    - [JSON schema](./databases/datacite/schema/)
+    - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
+    - note: data provided by SUB Göttingen as DataCite member
 
-- ### DataCite clients
-  (data underlying the DataCite API clients endpoint)
-  - source and documentation: https://support.datacite.org/reference/get_clients
-  - sample date: 2026-04-11
-  - license: CC0
-  - [cURL command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
-  - [JSON schema](./databases/datacite/schema/datacite_clients_schema.json)
-  - [JSON schema for ingest](./databases/datacite/schema/datacite_clients_ingest_schema.json)
-  - notes:
-    - use pagination to retrieve all records
-    - ingest schema includes variables *link* and *meta* from API response 
+  - #### DataCite clients
+    (data underlying the DataCite API clients endpoint)
+    - source and documentation: https://support.datacite.org/reference/get_clients
+    - sample date: 2026-04-11
+    - license: CC0
+    - [cURL command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
+    - [JSON schema](./databases/datacite/schema/datacite_clients_schema.json)
+    - [JSON schema for ingest](./databases/datacite/schema/datacite_clients_ingest_schema.json)
+    - notes:
+      - use pagination to retrieve all records
+      - ingest schema includes variables *link* and *meta* from API response 
 
 - ### DOAJ
   - source and documentation:

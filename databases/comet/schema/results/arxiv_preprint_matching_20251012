@@ -1,0 +1,23 @@
+[
+  {
+    "name": "input_doi",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "The DOI of the ArXiv preprint (format: 10.48550/arxiv.XXXX.XXXXX)",
+    "fields": []
+  },
+  {
+    "name": "matched_doi",
+    "mode": "NULLABLE",
+    "type": "STRING",
+    "description": "The DOI of the published work in Crossref that corresponds to the preprint",
+    "fields": []
+  },
+  {
+    "name": "confidence",
+    "mode": "NULLABLE",
+    "type": "FLOAT",
+    "description": "A confidence score (0-1) indicating the reliability of the match",
+    "fields": []
+  }
+]

@@ -47,7 +47,10 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
-- ### COMET - 
+- ### COMET
+
+  - #### COMET project results
+  - #### COMET metadata enrichments 
 
 - ### Crossref
 

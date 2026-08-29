@@ -58,6 +58,16 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### COMET
 
+  - #### COMET enrichments
+
+     - ##### COMET DataCite enrichments: affiliations, funders, resource-type-general
+       - source and documentation:
+         - https://huggingface.co/buckets/cometadata/comet-enrichments (download)
+       - release date: 2026-08-01
+       - CLI command (to retrieve data): ```hf buckets sync hf://buckets/cometadata/comet-enrichments/datacite ./Downloads/hf```
+       - [JSON schema](./ddatabases/comet/schema/enrichments/schema_ingest.json)
+       - note: "originalValue" and "enrichedValue" are ingested as JSON; to be extracted in post-processing
+
   - #### COMET project results
 
     - ##### COMET arXiv preprint matching

@@ -60,12 +60,12 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - CLI command (to retrieve data): ```hf download cometadata/arxiv-preprint-matching-results --repo-type dataset --local-dir ./Downloads/hf```
       - [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20250615.json) (2025-06-15) / [JSON schema](./databases/comet/schema/results/arxiv_preprint_matching_20251012.json) (2025-10-12)
 
-    - ##### COMET Improve Affiliations Parsing of Preprints
+    - ##### COMET arXiv preprint author affiliation extraction
       - source and documentation:
-      - https://doi.org/10.82461/160e-8q92 (documentation)
-      - release date:
-      - [CLI command](./databases/datacite/datacite_clients_curl.md/) (to retrieve data)
-      - [JSON schema]()
+        - https://doi.org/10.82461/160e-8q92 (documentation)
+        - https://doi.org/10.5281/zenodo.18663775 (download)
+      - release date: 2026-02-16
+      - [JSON schema](./databases/comet/schema/results/arxiv_preprint_author_affiliation_extraction.json)
 
      - ##### COMET arXiv funding entity extractions
        - source and documentation:

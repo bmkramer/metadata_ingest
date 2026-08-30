@@ -36,7 +36,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 ## Data sources
 
-- ### arXiv [GBQ link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sarxiv)
+- ### arXiv
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sarxiv)
   -  source and documentation: https://www.kaggle.com/datasets/Cornell-University/arxiv/data
   -  release date: 2026-08-22 (v300)
   -  license: CC0

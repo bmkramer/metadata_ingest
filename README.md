@@ -58,7 +58,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - notes:
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
-- ### COMET  [GBQ link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scomet)
+- ### COMET
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scomet)
 
   - #### COMET enrichments
 
@@ -101,6 +102,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
        - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
        
 - ### Crossref
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref)
 
   - #### Crossref public data file
     - source and documentation: https://www.crossref.org/learning/public-data-file/

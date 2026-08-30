@@ -12,7 +12,7 @@ LAX_STRING(JSON_EXTRACT(originalValue, '$.funderIdentifier')) as funderIdentifie
 LAX_STRING(JSON_EXTRACT(originalValue, '$.funderIdentifierType')) as funderIdentifierType,
 LAX_STRING(JSON_EXTRACT(originalValue, '$.funderName')) as funderName,
 LAX_STRING(JSON_EXTRACT(originalValue, '$.schemeUri')) as schemeUri
-) as originalValue_NEW,
+) as originalValue,
 
 STRUCT(
 LAX_STRING(JSON_EXTRACT(enrichedValue, '$.awardNumber')) as awardNumber,
@@ -22,6 +22,6 @@ LAX_STRING(JSON_EXTRACT(enrichedValue, '$.funderIdentifier')) as funderIdentifie
 LAX_STRING(JSON_EXTRACT(enrichedValue, '$.funderIdentifierType')) as funderIdentifierType,
 LAX_STRING(JSON_EXTRACT(enrichedValue, '$.funderName')) as funderName,
 LAX_STRING(JSON_EXTRACT(enrichedValue, '$.schemeUri')) as schemeUri
-) as enrichedValue_NEW
+) as enrichedValue
 
  FROM `sos-datasources.comet.enrichments_funders_20260801` 

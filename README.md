@@ -60,7 +60,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### COMET
   - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scomet)
-
   - #### COMET enrichments
 
      - ##### COMET DataCite enrichments: affiliations, funders, resource-type-general
@@ -103,7 +102,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
        
 - ### Crossref
   - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref)
-
   - #### Crossref public data file
     - source and documentation: https://www.crossref.org/learning/public-data-file/
     - release date: 2025-03-12
@@ -127,7 +125,6 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### DataCite
   - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sdatacite)
-  
   - #### DataCite monthly data file 
     - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
     - release date: 2026-08-01
@@ -176,6 +173,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - ### Make Data Count (Data Citation Corpus)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2smake_data_count)
   - source and documentation:
     - https://makedatacount.org/find-a-tool/data-citation-corpus-documentation/ (documentation)
     - https://doi.org/10.5281/zenodo.16901115 (download)
@@ -185,6 +183,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](databases/datacitationcorpus/dcc.py)
 
 - ### OpenAIRE
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopenaire) 
   - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-06-08 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
@@ -202,6 +201,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - some relationship tables have a different record count then reported by OpenAIRE (this is under investigation)
 
 - ### OpenAPC
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopenapc) 
   - source and documentation:
     - https://www.openapc.net/ (documentation)
     - https://github.com/OpenAPC/openapc-de/ (documentation)
@@ -211,6 +211,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openapc/schema/)
 
 - ### OpenCitations Meta
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopencitations)
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
@@ -222,6 +223,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - to be updated to latest version
 
 - ### OpenEditors
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopeneditors)
   - source and documentation:
       - https://openeditors.ooir.org/ (documentation)
       - https://github.com/andreaspacher/openeditors (documentation)
@@ -231,12 +233,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openeditions/schema/)
 
 - ### PKP
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2spkp)
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
   - license: CC0
   - [JSON schema](./databases/pkp/schema/)
 
 - ### ROR
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sror) 
   - source and documentation:
     - https://ror.readme.io/docs/data-dump (documentation)
     - https://doi.org/10.5281/zenodo.6347574 (download)

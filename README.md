@@ -65,8 +65,9 @@ Tables are currently not partitioned or clustered - this would be a useful futur
          - https://huggingface.co/buckets/cometadata/comet-enrichments (download)
        - release date: 2026-08-01
        - CLI command (to retrieve data): ```hf buckets sync hf://buckets/cometadata/comet-enrichments/datacite ./Downloads/hf```
-       - [JSON schema](./ddatabases/comet/schema/enrichments/schema_ingest.json)
-       - note: "originalValue" and "enrichedValue" are ingested as JSON; to be extracted in post-processing
+       - [JSON schema](./databases/comet/schema/enrichments/schema_ingest.json) (for ingest)
+       - SQL processing scripts: [affiliations](./databases/comet/sql/processing_enrichments_affiliations.sql) / [funders](./databases/comet/sql/processing_enrichments_funders.sql) / [resource-type-general](./databases/comet/sql/processing_enrichments_resource_type_general.sql)
+       - note: "originalValue" and "enrichedValue" are ingested as JSON and extracted in post-processing
 
   - #### COMET project results
 

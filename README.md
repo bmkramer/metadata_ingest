@@ -45,7 +45,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - metadata file made available on Kaggle using https://github.com/mattbierbaum/arxiv-public-datasets
     - variable 'authors_parsed' ingested as JSON
 
-- ### Butler APCs
+- ### Butler APCs [GBQ link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sbutler_apcs)
   - source and documentation:
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)

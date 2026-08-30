@@ -249,6 +249,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/ror/schema/)
 
 - ### Truthtables
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2struthtables)
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources
   - Data sources:

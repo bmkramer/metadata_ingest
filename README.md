@@ -149,6 +149,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - ingest schema includes variables *link* and *meta* from API response 
 
 - ### DOAJ
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sdoaj)
   - source and documentation:
     - https://doaj.org/docs/public-data-dump/ (documentation)
     - https://doaj.org/csv (download)
@@ -160,6 +161,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### GOA 
   (Walt Crawford Gold Open Access datasets)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sgoa)
   - source and documentation:
     - GOA5 (2014-2019) https://doi.org/10.6084/m9.figshare.12543080
     - GOA6 (2015-2020) https://doi.org/10.6084/m9.figshare.14787888

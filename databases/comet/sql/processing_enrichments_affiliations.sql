@@ -3,7 +3,7 @@
 --- Reminder to self: Use JSON_KEYS to identify keys in imported JSON
 
 WITH TABLE AS (
-SELECT 
+SELECT -- DISTINCT not possible with JSON
 *,
 --- convert full JSON to string for all downstream matching
 TO_JSON_STRING(originalValue) as originalValue_string,
@@ -12,7 +12,7 @@ FROM `sos-datasources.comet.enrichments_affiliations_20260801`
 ),
 
 TABLE_STRINGS_ORIGINAL AS (
-SELECT 
+SELECT DISTINCT
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -27,7 +27,7 @@ FROM TABLE
 ),
 
 TABLE_STRINGS_ENRICHED AS (
-SELECT 
+SELECT DISTINCT
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -42,7 +42,7 @@ FROM TABLE
 ),
 
 TABLE_ARRAYS AS (
-SELECT
+SELECT -- DISTINCT not possible with JSON
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -56,7 +56,7 @@ FROM TABLE
 
 -- extract arrays per variable
 TABLE_AFFILATIONS_ORIGINAL AS (
-SELECT 
+SELECT DISTINCT
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -74,7 +74,7 @@ GROUP BY ALL
 ),
 
 TABLE_AFFILATIONS_ENRICHED AS (
-SELECT 
+SELECT DISTINCT
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -93,7 +93,7 @@ GROUP BY ALL
 
 TABLE_NAME_IDENTIFIERS_ORIGINAL AS (
 
-SELECT 
+SELECT DISTINCT
 
 doi,
 originalValue_string,
@@ -111,7 +111,7 @@ GROUP BY ALL
 ),
 
  TABLE_NAME_IDENTIFIERS_ENRICHED AS (
-SELECT 
+SELECT DISTINCT
 doi,
 originalValue_string,
 enrichedValue_string,
@@ -130,7 +130,7 @@ GROUP BY ALL
 --- combine all extracted variables in structs
 TABLE_JOIN AS (
 
-SELECT 
+SELECT --- Do not use DISTINCT to keep original number of records
 
 a.* EXCEPT (originalValue, enrichedValue, originalValue_string, enrichedValue_string),
 

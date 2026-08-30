@@ -126,6 +126,8 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - ### DataCite
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sdatacite)
+  
   - #### DataCite monthly data file 
     - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
     - release date: 2026-08-01

@@ -1,3 +1,5 @@
+--- This creates all variables for all records (with null value if not present in imported JSON)
+
 SELECT
 
 * EXCEPT (originalValue, enrichedValue),

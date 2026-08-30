@@ -1,4 +1,6 @@
 --- This creates all variables for all records (with null value if not present in imported JSON)
+--- Values may include both null values and empty strings (as present in imported JSON)
+--- Reminder to self: Use JSON_KEYS to identify keys in imported JSON
 
 SELECT 
 

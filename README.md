@@ -65,6 +65,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
      - ##### COMET DataCite enrichments: affiliations, funders, resource-type-general
        - source and documentation:
          - https://huggingface.co/buckets/cometadata/comet-enrichments (download)
+         - https://github.com/datacite/lupo/blob/master/app/models/schemas/enrichment/enrichment.json (current schema documentation)
        - release date: 2026-08-01
        - CLI command (to retrieve data): ```hf buckets sync hf://buckets/cometadata/comet-enrichments/datacite ./Downloads/hf```
        - [JSON schema](./databases/comet/schema/enrichments/schema_ingest.json) (for ingest)

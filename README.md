@@ -102,7 +102,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
        - note: dataset used: *arxiv-funding-entity-extractions/predictions-with-ror*
        
 - ### Crossref
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scrossref)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=crossref&page=dataset)
   - #### Crossref public data file
     - source and documentation: https://www.crossref.org/learning/public-data-file/
     - release date: 2025-03-12
@@ -125,7 +125,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - [JSON schema](./databases/crossref/schema/crossref_members_schema.json)
 
 - ### DataCite
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sdatacite)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=datacite&page=dataset)
   - #### DataCite monthly data file 
     - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
     - release date: 2026-08-01
@@ -147,7 +147,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
       - ingest schema includes variables *link* and *meta* from API response 
 
 - ### DOAJ
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sdoaj)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=doaj&page=dataset)
   - source and documentation:
     - https://doaj.org/docs/public-data-dump/ (documentation)
     - https://doaj.org/csv (download)
@@ -159,7 +159,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 
 - ### GOA 
   (Walt Crawford Gold Open Access datasets)
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sgoa)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=goa&page=dataset)
   - source and documentation:
     - GOA5 (2014-2019) https://doi.org/10.6084/m9.figshare.12543080
     - GOA6 (2015-2020) https://doi.org/10.6084/m9.figshare.14787888
@@ -174,7 +174,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - For GOA10 only, a version (GOA10_all) with both included and excluded journals is available, next to the regular version with only included journals (GOA10). 
 
 - ### Make Data Count (Data Citation Corpus)
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2smake_data_count)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=make_data_count&page=dataset)
   - source and documentation:
     - https://makedatacount.org/find-a-tool/data-citation-corpus-documentation/ (documentation)
     - https://doi.org/10.5281/zenodo.16901115 (download)
@@ -184,7 +184,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [Python script to transform regular JSON (single array of objects) to JSONL (newline delimited JSON)](databases/datacitationcorpus/dcc.py)
 
 - ### OpenAIRE
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopenaire) 
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=openaire&page=dataset) 
   - source and documentation: https://doi.org/10.5281/zenodo.3516917
   - release date: 2026-06-08 (provided by OpenAIRE)
   - [JSON schemas](./databases/openaire/schema/)
@@ -202,7 +202,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - some relationship tables have a different record count then reported by OpenAIRE (this is under investigation)
 
 - ### OpenAPC
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopenapc) 
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=openapc&page=dataset) 
   - source and documentation:
     - https://www.openapc.net/ (documentation)
     - https://github.com/OpenAPC/openapc-de/ (documentation)
@@ -212,7 +212,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openapc/schema/)
 
 - ### OpenCitations Meta
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopencitations)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=open_citations&page=dataset)
   - source and documentation:
       - https://download.opencitations.net/#meta (documentation)
       - https://doi.org/10.6084/m9.figshare.21747461.v9 (download)
@@ -224,8 +224,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - to be updated to latest version
 
 - ### OpenEditors
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sopeneditors)
-  - source and documentation:
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=openeditors&page=dataset)
       - https://openeditors.ooir.org/ (documentation)
       - https://github.com/andreaspacher/openeditors (documentation)
       - https://doi.org/10.5281/zenodo.19108866 (download)
@@ -234,14 +233,14 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/openeditions/schema/)
 
 - ### PKP
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2spkp)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=pkp&page=dataset)
   - source and documentation: https://doi.org/10.7910/DVN/OCZNVY
   - release date: 2025-11-21 (previous version 2024-12-02)
   - license: CC0
   - [JSON schema](./databases/pkp/schema/)
 
 - ### ROR
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sror) 
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=ror&page=dataset) 
   - source and documentation:
     - https://ror.readme.io/docs/data-dump (documentation)
     - https://doi.org/10.5281/zenodo.6347574 (download)
@@ -250,7 +249,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [JSON schema](./databases/ror/schema/)
 
 - ### Truthtables
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2struthtables)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=truthtables&page=dataset)
   - **Processed** tables indicating presence (TRUE/FALSE) and count of several metadata elemements for each record in a data source.
   - Created to facilitate comparison of metadata coverage across sources
   - Data sources:

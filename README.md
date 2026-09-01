@@ -37,7 +37,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
 ## Data sources
 
 - ### arXiv
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sarxiv)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=arxiv&page=dataset)
   -  source and documentation: https://www.kaggle.com/datasets/Cornell-University/arxiv/data
   -  release date: 2026-08-22 (v300)
   -  license: CC0
@@ -47,7 +47,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - variable 'authors_parsed' ingested as JSON
 
 - ### Butler APCs
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2sbutler_apcs)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=butler_apcs&page=dataset)
   - source and documentation:
     - https://doi.org/10.7910/DVN/CR1MMV (documentation)
     - apclist_by_journal_year: https://dataverse.harvard.edu/file.xhtml?fileId=10272826&version=1.0 (download)
@@ -59,7 +59,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
     - An open dataset of article processing charges from six large scholarly publishers (2019-2023)
 
 - ### COMET
-  - [Google Big Query link](https://console.cloud.google.com/bigquery?ws=!1m4!1m3!3m2!1ssos-datasources!2scomet)
+  - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=comet&page=dataset)
   - #### COMET enrichments
 
      - ##### COMET DataCite enrichments: affiliations, funders, resource-type-general

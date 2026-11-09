@@ -128,7 +128,7 @@ Tables are currently not partitioned or clustered - this would be a useful futur
   - [Google Big Query link](https://console.cloud.google.com/bigquery?project=sos-datasources&p=sos-datasources&d=datacite&page=dataset)
   - #### DataCite monthly data file 
     - source and documentation: https://support.datacite.org/docs/datacite-monthly-data-file
-    - release date: 2026-08-01
+    - release date: 2026-11-01
     - license: CC0
     - [JSON schema](./databases/datacite/schema/)
     - [Python script for preprocessing](https://codeberg.org/cameronneylon/schema-wash) [on Codeberg]
